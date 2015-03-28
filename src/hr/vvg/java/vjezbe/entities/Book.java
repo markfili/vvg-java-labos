@@ -42,7 +42,7 @@ public class Book extends Publication implements ForLoan {
     @Override
     public void printData() {
         super.printData();
-        System.out.println(getData());
+        System.out.println(this.getData());
     }
 
     public String getData() {
@@ -64,7 +64,4 @@ public class Book extends Publication implements ForLoan {
         return this.available;
     }
 
-    public void setAvailable(boolean borrowed) {
-        this.available = borrowed;
-    }
 }

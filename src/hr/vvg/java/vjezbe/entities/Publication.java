@@ -55,7 +55,7 @@ public abstract class Publication implements ForSale {
     }
 
     public void printData() {
-        System.out.println(getData());
+        System.out.println(this.getData());
     }
 
     public BigDecimal getPriceOfPublication() {

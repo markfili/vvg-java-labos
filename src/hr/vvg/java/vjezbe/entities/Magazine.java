@@ -9,15 +9,13 @@ public class Magazine extends Publication {
 
     private int monthPublished;
 
-    // može byte monthPublished?
     public Magazine(String publicationTitle, int monthPublished, int yearPublished, int numberOfPages, String typeOfPublication) {
         super(publicationTitle, yearPublished, numberOfPages, typeOfPublication, checkPricePerPage(numberOfPages));
         this.monthPublished = monthPublished;
     }
 
-    // smije li se to tako pozivati?
     private static double checkPricePerPage(int pagesNum) {
-        return PRICE_PER_COPY/(float) pagesNum;
+        return (float) pagesNum / PRICE_PER_COPY;
     }
 
     public int getMonthPublished() {
