@@ -48,9 +48,9 @@ public class Loan {
 
     private String returnSubclassData() {
         if (pub instanceof Book) {
-            return ((Book) pub).getData();
+            return pub.getData();
         } else if (pub instanceof Magazine) {
-            return ((Magazine) pub).getData();
+            return pub.getData();
         }
         return "No info";
     }
