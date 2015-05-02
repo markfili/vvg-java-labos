@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Filipovic-3" />
+        <module name="Filipovic-4" />
       </profile>
     </annotationProcessing>
   </component>
