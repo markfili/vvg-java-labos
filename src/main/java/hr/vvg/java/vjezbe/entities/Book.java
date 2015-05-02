@@ -15,16 +15,13 @@ import static hr.vvg.java.vjezbe.enumerations.Language.HRVATSKI;
 /**
  * Book entity for creating new Books
  * Created by marko on 3/12/15.
- *
  */
 public class Book extends Publication implements ForLoan {
-
-    private Logger logger = LoggerFactory.getLogger(Book.class);
 
     private static final double PRICE_PER_PAGE_CROATIAN = 1.5;
     private static final double PRICE_PER_PAGE_FOREIGN = 1.7;
     private static final int BOTTOM_PRICE = 100;
-
+    private Logger logger = LoggerFactory.getLogger(Book.class);
     private Language language;
     private boolean available;
 
@@ -40,7 +37,7 @@ public class Book extends Publication implements ForLoan {
     }
 
     private static double checkPriceForLanguage(Language language) {
-       return language == HRVATSKI ? PRICE_PER_PAGE_CROATIAN : PRICE_PER_PAGE_FOREIGN;
+        return language == HRVATSKI ? PRICE_PER_PAGE_CROATIAN : PRICE_PER_PAGE_FOREIGN;
     }
 
     public Language getLanguage() {
@@ -90,6 +87,7 @@ public class Book extends Publication implements ForLoan {
 
     /**
      * Overridden method for book publishing affordability
+     *
      * @param price calculated price of publishing
      * @throws hr.vvg.java.vjezbe.exceptions.NonaffordablePublishingException thrown when calculated price is lower than BOTTOM_PRICE
      */

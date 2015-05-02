@@ -7,14 +7,12 @@ import java.util.Comparator;
 
 /**
  * Created by marko on 4/20/15.
- *
+ * <p>
  * Class PriceComparator
  * used to compare Publications by their publishing price
- *
  */
 public class PriceComparator implements Comparator<Publication> {
     /**
-     *
      * @param pub1 first publication to compare
      * @param pub2 second publication to compare
      * @return result of BigDecimal's compareTo method

@@ -5,7 +5,7 @@ package hr.vvg.java.vjezbe.enumerations;
  * Created by marko on 4/11/15.
  */
 public enum PublicationType {
-    DIGITAL(1,"Elektronicka"), PAPER(2,"Papirnata");
+    DIGITAL(1, "Elektronicka"), PAPER(2, "Papirnata");
 
     private int id;
     private String friendlyName;

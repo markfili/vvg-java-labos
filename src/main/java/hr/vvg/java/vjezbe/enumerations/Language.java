@@ -25,7 +25,7 @@ public enum Language {
         this.friendlyName = friendlyName;
     }
 
-    public static List<Language> languages(){
+    public static List<Language> languages() {
         return Arrays.asList(values());
     }
 

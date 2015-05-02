@@ -1,32 +1,28 @@
 package hr.vvg.java.vjezbe.entities;
 
 import hr.vvg.java.vjezbe.enumerations.PublicationType;
-import org.slf4j.Logger;
 import hr.vvg.java.vjezbe.exceptions.NonaffordablePublishingException;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
 
 /**
+ * Magazine object class
+ * <p>Creates a magazine object if affordable
+ * <p>
  * Created by marko on 3/19/15.
- *
  */
 public class Magazine extends Publication {
 
-    private Logger logger = LoggerFactory.getLogger(Magazine.class);
-
     private static final float PRICE_PER_COPY = 10;
-
+    private Logger logger = LoggerFactory.getLogger(Magazine.class);
     private int monthPublished;
 
     public Magazine(String publicationTitle, int monthPublished, int yearPublished, int numberOfPages, PublicationType typeOfPublication) {
         super(publicationTitle, yearPublished, numberOfPages, typeOfPublication, checkPricePerPage(numberOfPages));
         this.monthPublished = monthPublished;
-        try {
-            checkAffordability(super.getPriceOfPublication());
-        } catch (NonaffordablePublishingException nex) {
-            System.out.println("Neisplativo objavljivanje casopisa!");
-        }
+        checkAffordability(super.getPriceOfPublication());
     }
 
     private static double checkPricePerPage(int pagesNum) {

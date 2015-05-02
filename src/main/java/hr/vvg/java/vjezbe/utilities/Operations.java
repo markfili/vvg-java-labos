@@ -30,7 +30,7 @@ public class Operations {
     /**
      * prints a form for new Magazine entry
      *
-     * @param scanner         Scanner object
+     * @param scanner Scanner object
      */
     public static Magazine magazineDataInput(Scanner scanner) {
         System.out.print(Literals.PUB_TITLE);
@@ -68,7 +68,7 @@ public class Operations {
     /**
      * prints a form for new Book data entry
      *
-     * @param scanner         Scanner object
+     * @param scanner Scanner object
      * @return Book to add to list
      */
     public static Book bookDataInput(Scanner scanner) {
@@ -295,6 +295,7 @@ public class Operations {
 
     /**
      * Checks publicationList for duplicate Publications
+     *
      * @param obj
      * @param publicationList
      * @throws DuplicatePublicationException if duplicate publication found
