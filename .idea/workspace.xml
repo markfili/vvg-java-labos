@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cee57479-af13-46b1-910d-d2a02cd1a31d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/ForLoan.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/ForSale.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/exceptions/NonprofitablePublishingException.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Filipovic-3.iml" afterPath="$PROJECT_DIR$/Filipovic-4.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Book.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Magazine.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Magazine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/utilities/Operations.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/utilities/Operations.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/utilities/PriceComparator.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/utilities/PriceComparator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/Loan.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/Loan.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Filipovic-1.iws" />
