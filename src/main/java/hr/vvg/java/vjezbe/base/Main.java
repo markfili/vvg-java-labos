@@ -1,7 +1,9 @@
 package hr.vvg.java.vjezbe.base;
 
 import hr.vvg.java.vjezbe.entities.*;
-import hr.vvg.java.vjezbe.exceptions.DuplicatePublicationException;
+import hr.vvg.java.vjezbe.enumerations.Language;
+import hr.vvg.java.vjezbe.enumerations.PublicationType;
+import hr.vvg.java.vjezbe.exceptions.NonaffordablePublishingException;
 import hr.vvg.java.vjezbe.utilities.Operations;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,71 +26,90 @@ public class Main {
         logger = LoggerFactory.getLogger(Main.class);
         Scanner scanner = new Scanner(System.in);
 
-        // Publication[] publicationArray = new Publication[4];
         List<Publication> publicationList = new ArrayList<>();
-        String[] typesOfPublishing = Publication.getTypesOfPublishingArray();
 
         // TODO zakomentirati init testnih podataka
-        Member member = initTestData(publicationList);
-
+//        Member member = initTestData(scanner, publicationList);
 
         // TODO otkomentirati kako bi se omogucio unos knjiga, casopisa i podataka o clanu
-/*
         System.out.println("\t\t\tDobar dan!");
-        System.out.println("****************************************\n\tUnesite podatke za dvije knjige!\n****************************************");
 
-        for (int i = 1; i <= NUMBER_OF_BOOKS; i++) {
-            System.out.println(String.format("Unesite podatke za %d. knjigu", i));
-            Operations.bookDataInput(scanner, publicationList, typesOfPublishing);
-        }
+        // repeat main function until it gets no longer interesting
+        do {
+            System.out.printf("****************************************\n\tUnesite podatke za %d knjige i %d casopisa!\n****************************************\n", NUMBER_OF_BOOKS, NUMBER_OF_MAGAZINES);
 
-        for (int i = 1; i <= NUMBER_OF_MAGAZINES; i++) {
-            System.out.println(String.format("Unesite podatke za %d. casopis", i));
-            Operations.magazineDataInput(scanner, publicationList, typesOfPublishing);
-        }
+            int i = 1;
+            boolean added;
+            do {
+                added = false;
+                System.out.println(String.format("Unesite podatke za %d. knjigu", i));
+                try {
+                    if (!(added = Operations.addPublication(Operations.bookDataInput(scanner, publicationList), publicationList))) {
+                        System.out.println("Greška, ponovno unesite: ");
+                    } else {
+                        i++;
+                    }
+                } catch (NonaffordablePublishingException nex) {
+                    System.out.println(nex.getMessage());
+                }
+            } while (i <= NUMBER_OF_BOOKS || !added);
 
-        System.out.println("\nPodaci clana");
-        Member member = Operations.memberDataInput(scanner);
-*/
+            i = 1;
+            do {
+                System.out.println(String.format("Unesite podatke za %d. casopis", i));
+                try {
+                    if (!(added = Operations.addPublication(Operations.magazineDataInput(scanner, publicationList), publicationList))) {
+                        System.out.println("Greska, ponovno uesite: ");
+                    } else {
+                        i++;
+                    }
+                } catch (NonaffordablePublishingException nex) {
+                    System.out.println(nex.getMessage());
+                }
+            } while (i <= NUMBER_OF_MAGAZINES || !added);
 
-        Publication.sortByPrice(publicationList);
-        logger.info("Najskuplja publikacija\n" + publicationList.get(publicationList.size() - 1).getData());
+            System.out.println("\nPodaci clana");
+            Member backupMember = new Member("Leonard", "Davinčić", "212333314");
+            Member member = Operations.memberDataInput(scanner).orElse(backupMember);
 
-        Publication chosenPublication = Operations.selectPubToLoan(scanner, publicationList);
-        if (chosenPublication != null) {
-            Operations.executeLoan(member, chosenPublication);
-        } else {
-            System.out.println("Ne moze, knjiznica ipak ne da knjigu.");
-        }
+            Operations.sortByPrice(publicationList);
+            Operations.executeLoan(member, Operations.selectPubToLoan(scanner, publicationList));
 
+            System.out.printf("Zelite li ponoviti unos knjiga i odabir posudbe? (Da za ponavljanje, bilosto za kraj)");
+        } while ("da".equals(scanner.nextLine().toLowerCase()));
 
     }
 
 
-    private static Member initTestData(List<Publication> publicationList) {
+    private static Member initTestData(Scanner scanner, List<Publication> publicationList) {
 
+        boolean exception = false;
         logger.warn("kreiranje testnih objekata!");
-
-        Book bookOne = new Book("Ko guske kroz maglu", "Hrvatski", new Publisher("Janko", "Hrvatska"), 1988, 1600, Book.TYPE_PAPER);
-        Book bookTwo = new Book("Through thick fog till death", "Engleski", new Publisher("Bobetko", "England"), 1989, 302, Book.TYPE_ELECTRONIC);
-
-        Magazine magazineOne = new Magazine("Top Fear", 11, 2011, 3, Magazine.TYPE_PAPER);
-        Magazine magazineTwo = new Magazine("Madames in skirtes", 9, 1811, 24, Magazine.TYPE_ELECTRONIC);
-        Magazine magazineThree = new Magazine("Madames in skirtes", 9, 1811, 24, Magazine.TYPE_ELECTRONIC);
-
-        publicationList.add(bookOne);
-        publicationList.add(magazineOne);
-        publicationList.add(bookTwo);
-        publicationList.add(magazineTwo);
+        Book bookOne = null;
+        Book bookTwo = null;
+        Magazine magazineOne = null;
+        Magazine magazineTwo = null;
+        Magazine magazineThree = null;
 
         try {
-            Operations.checkForDuplicate(magazineThree, publicationList);
-            Operations.checkForDuplicate(bookOne, publicationList);
-        } catch (DuplicatePublicationException e) {
-            e.printStackTrace();
-        }
+            magazineOne = new Magazine("Top Fear", 11, 2011, 345, PublicationType.DIGITAL);
+            Operations.addPublication(magazineOne, publicationList);
+            magazineTwo = new Magazine("Madames in skirtes", 9, 1811, 2445, PublicationType.PAPER);
+            Operations.addPublication(magazineTwo, publicationList);
+//            magazineThree = new Magazine("Madames in skirtes", 9, 1811, 24, Magazine.TYPE_ELECTRONIC);
+//            Operations.addPublication(magazineThree, publicationList);
+            bookOne = new Book("Ko guske kroz maglu", Language.ENGLESKI, new Publisher("Janko", "Hrvatska"), 1988, 16005, PublicationType.DIGITAL);
+            Operations.addPublication(bookOne, publicationList);
+            bookTwo = new Book("Through thick fog till death", Operations.chooseLanguage(scanner), new Publisher("Bobetko", "England"), 1989, 3023, PublicationType.PAPER);
+            Operations.addPublication(bookTwo, publicationList);
 
+        } catch (NonaffordablePublishingException ex) {
+            ex.printStackTrace();
+            exception = true;
+        }
 
         return new Member("Ivan", "Ivić", "2032323224");
     }
+
+
 }

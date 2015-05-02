@@ -1,28 +1,31 @@
 package hr.vvg.java.vjezbe.entities;
 
-import hr.vvg.java.vjezbe.exceptions.NonprofitablePublishingException;
+import hr.vvg.java.vjezbe.enumerations.PublicationType;
+import org.slf4j.Logger;
+import hr.vvg.java.vjezbe.exceptions.NonaffordablePublishingException;
+import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
 
 /**
  * Created by marko on 3/19/15.
+ *
  */
 public class Magazine extends Publication {
+
+    private Logger logger = LoggerFactory.getLogger(Magazine.class);
 
     private static final float PRICE_PER_COPY = 10;
 
     private int monthPublished;
 
-    public Magazine(String publicationTitle, int monthPublished, int yearPublished, int numberOfPages, String typeOfPublication) {
+    public Magazine(String publicationTitle, int monthPublished, int yearPublished, int numberOfPages, PublicationType typeOfPublication) {
         super(publicationTitle, yearPublished, numberOfPages, typeOfPublication, checkPricePerPage(numberOfPages));
         this.monthPublished = monthPublished;
-
         try {
-            if (BigDecimal.valueOf(0.1).compareTo(super.getPriceOfPublication()) != -1) {
-                throw new NonprofitablePublishingException("Neisplativo izdavanje casopisa " + getPublicationTitle());
-            }
-        } catch (NonprofitablePublishingException ex) {
-            ex.printStackTrace();
+            checkAffordability(super.getPriceOfPublication());
+        } catch (NonaffordablePublishingException nex) {
+            System.out.println("Neisplativo objavljivanje casopisa!");
         }
     }
 
@@ -41,7 +44,15 @@ public class Magazine extends Publication {
 
     @Override
     public String getData() {
-        return String.format("Naslov: %s\nGodina izdanja: %d\nBroj stranica: %d\nTip publikacije: %s\nCijena: %sHRK\nMjesec izdanja: %d", getPublicationTitle(), getYearPublished(), getNumberOfPages(), getTypeOfPublication(), getPriceOfPublication().toPlainString(), getMonthPublished());
+        return String.format("Naslov: %s\nGodina izdanja: %d\nBroj stranica: %d\nTip publikacije: %s\nCijena: %sHRK\nMjesec izdanja: %d", getPublicationTitle(), getYearPublished(), getNumberOfPages(), getTypeOfPublication().getFriendlyName(), getPriceOfPublication().toPlainString(), getMonthPublished());
+    }
+
+    @Override
+    public void checkAffordability(BigDecimal price) {
+        if (BigDecimal.valueOf(0.1).compareTo(price) != -1) {
+            logger.warn(String.format("casopis %s neisplativ", getPublicationTitle()));
+            throw new NonaffordablePublishingException("Neisplativo izdavanje casopisa " + getPublicationTitle());
+        }
     }
 
     @Override
@@ -53,4 +64,6 @@ public class Magazine extends Publication {
         }
         return false;
     }
+
+
 }

@@ -1,53 +1,49 @@
 package hr.vvg.java.vjezbe.entities;
 
 
-import hr.vvg.java.vjezbe.exceptions.NonprofitablePublishingException;
+import hr.vvg.java.vjezbe.enumerations.Language;
+import hr.vvg.java.vjezbe.enumerations.PublicationType;
+import hr.vvg.java.vjezbe.exceptions.NonaffordablePublishingException;
+import hr.vvg.java.vjezbe.interfaces.ForLoan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
 
+import static hr.vvg.java.vjezbe.enumerations.Language.HRVATSKI;
+
 /**
+ * Book entity for creating new Books
  * Created by marko on 3/12/15.
- * Book class
+ *
  */
 public class Book extends Publication implements ForLoan {
 
-    private static final double PRICE_PER_PAGE_CROATIAN = 0.5;
-    private static final double PRICE_PER_PAGE_FOREIGN = 0.7;
-    private static final String CROATIAN = "HRVATSKI";
+    private Logger logger = LoggerFactory.getLogger(Book.class);
 
-    private String language;
+    private static final double PRICE_PER_PAGE_CROATIAN = 1.5;
+    private static final double PRICE_PER_PAGE_FOREIGN = 1.7;
+    private static final int BOTTOM_PRICE = 100;
+
+    private Language language;
     private boolean available;
 
     private Publisher publisher;
 
-    public Book(String title, String language, Publisher publisher, int yearPublished, int numberOfPages, String typeOfPublication) throws NonprofitablePublishingException {
-        super(title, yearPublished, numberOfPages, typeOfPublication, checkLanguageForPrice(language));
+    public Book(String title, Language language, Publisher publisher, int yearPublished, int numberOfPages, PublicationType typeOfPublication) throws NonaffordablePublishingException {
+        super(title, yearPublished, numberOfPages, typeOfPublication, checkPriceForLanguage(language));
         this.language = language;
         this.publisher = publisher;
         this.available = true;
-        try {
-            if (BigDecimal.valueOf(100.00).compareTo(super.getPriceOfPublication()) != -1) {
-                throw new NonprofitablePublishingException("Neisplativo izdavanje knjige " + getPublicationTitle());
-            }
-        } catch (NonprofitablePublishingException ex) {
-            ex.printStackTrace();
-        }
-
-        Logger logger = LoggerFactory.getLogger(this.getClass());
+        checkAffordability(super.getPriceOfPublication());
         logger.info("Book created\n" + getData());
     }
 
-    private static double checkLanguageForPrice(String language) {
-        if (CROATIAN.equals(language.toUpperCase())) {
-            return PRICE_PER_PAGE_CROATIAN;
-        } else {
-            return PRICE_PER_PAGE_FOREIGN;
-        }
+    private static double checkPriceForLanguage(Language language) {
+       return language == HRVATSKI ? PRICE_PER_PAGE_CROATIAN : PRICE_PER_PAGE_FOREIGN;
     }
 
-    public String getLanguage() {
+    public Language getLanguage() {
         return this.language;
     }
 
@@ -62,17 +58,19 @@ public class Book extends Publication implements ForLoan {
 
     @Override
     public String getData() {
-        return String.format("Naslov: %s\nGodina izdanja: %d\nBroj stranica: %d\nTip publikacije: %s\nCijena: %sHRK\nJezik knjige: %s\nIzdavač: %s\nDržava izdavača: %s", getPublicationTitle(), getYearPublished(), getNumberOfPages(), getTypeOfPublication(), getPriceOfPublication().toPlainString(), getLanguage(), getPublisher().getName(), getPublisher().getCountry());
+        return String.format("Naslov: %s\nGodina izdanja: %d\nBroj stranica: %d\nTip publikacije: %s\nCijena: %sHRK\nJezik knjige: %s\nIzdavač: %s\nDržava izdavača: %s, Dostupno za posudbu: %s", getPublicationTitle(), getYearPublished(), getNumberOfPages(), getTypeOfPublication().getFriendlyName(), getPriceOfPublication().toPlainString(), getLanguage().getFriendlyName(), getPublisher().getName(), getPublisher().getCountry(), checkAvailability() ? "Da" : "Ne");
     }
 
     @Override
     public void borrow() {
         this.available = false;
+        logger.info("knjiga %s posudjena", getPublicationTitle());
     }
 
     @Override
     public void giveBack() {
         this.available = true;
+        logger.info("knjiga %s vracena", getPublicationTitle());
     }
 
     @Override
@@ -88,5 +86,18 @@ public class Book extends Publication implements ForLoan {
             }
         }
         return false;
+    }
+
+    /**
+     * Overridden method for book publishing affordability
+     * @param price calculated price of publishing
+     * @throws hr.vvg.java.vjezbe.exceptions.NonaffordablePublishingException thrown when calculated price is lower than BOTTOM_PRICE
+     */
+    @Override
+    public void checkAffordability(BigDecimal price) throws NonaffordablePublishingException {
+        if (BigDecimal.valueOf(BOTTOM_PRICE).compareTo(price) != -1) {
+            logger.warn(String.format("knjiga %s neisplativa", super.getPublicationTitle()));
+            throw new NonaffordablePublishingException("Neisplativo izdavanje knjige " + super.getPublicationTitle() + " za cijenu " + price);
+        }
     }
 }

@@ -1,45 +1,29 @@
 package hr.vvg.java.vjezbe.entities;
 
+import hr.vvg.java.vjezbe.enumerations.PublicationType;
+import hr.vvg.java.vjezbe.interfaces.ForSale;
+
 import java.math.BigDecimal;
-import java.util.List;
 
 /**
  * Created by marko on 3/18/15.
  */
 public abstract class Publication implements ForSale {
 
-    public static final String TYPE_ELECTRONIC = "ELECTRONIC";
-    public static final String TYPE_PAPER = "PAPER";
-
     private String publicationTitle;
     private int yearPublished;
     private int numberOfPages;
-    private String typeOfPublication;
+    private PublicationType typeOfPublication;
 
     private BigDecimal priceOfPublication;
 
-    /*
-    enum PublicationType {
-        VRSTA_PUBLIKACIJE_ELEKTRONICKA, VRSTA_PUBLIKACIJE_PAPIRNATA
-    }
-    */
 
-    public Publication(String publicationTitle, int yearPublished, int numberOfPages, String typeOfPublication, double priceOfPublishing) {
+    public Publication(String publicationTitle, int yearPublished, int numberOfPages, PublicationType typeOfPublication, double priceOfPublishing) {
         this.publicationTitle = publicationTitle;
         this.yearPublished = yearPublished;
         this.numberOfPages = numberOfPages;
         this.typeOfPublication = typeOfPublication;
         this.priceOfPublication = calculatePrice(numberOfPages, typeOfPublication, priceOfPublishing);
-    }
-
-    public static String[] getTypesOfPublishingArray() {
-        return new String[]{
-                TYPE_ELECTRONIC, TYPE_PAPER
-        };
-    }
-
-    public static void sortByPrice(List<Publication> publicationList) {
-        publicationList.sort((pub1, pub2) -> (pub1.getPriceOfPublication().compareTo(pub2.getPriceOfPublication())));
     }
 
     public String getPublicationTitle() {
@@ -54,13 +38,15 @@ public abstract class Publication implements ForSale {
         return numberOfPages;
     }
 
-    public String getTypeOfPublication() {
+    public PublicationType getTypeOfPublication() {
         return typeOfPublication;
     }
 
     public abstract void printData();
 
     public abstract String getData();
+
+    public abstract void checkAffordability(BigDecimal price);
 
     public BigDecimal getPriceOfPublication() {
         return priceOfPublication;
