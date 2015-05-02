@@ -5,7 +5,7 @@ import hr.vvg.java.vjezbe.enumerations.PublicationType;
 import java.math.BigDecimal;
 
 /**
- *
+ * Interface
  * Created by marko on 3/18/15.
  */
 public interface ForSale {

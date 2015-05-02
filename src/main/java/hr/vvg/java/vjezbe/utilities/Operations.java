@@ -31,9 +31,8 @@ public class Operations {
      * prints a form for new Magazine entry
      *
      * @param scanner         Scanner object
-     * @param publicationList list of Publications
      */
-    public static Magazine magazineDataInput(Scanner scanner, List<Publication> publicationList) {
+    public static Magazine magazineDataInput(Scanner scanner) {
         System.out.print(Literals.PUB_TITLE);
         String title = scanner.nextLine();
         System.out.print(Literals.PUB_MONTH);
@@ -70,9 +69,9 @@ public class Operations {
      * prints a form for new Book data entry
      *
      * @param scanner         Scanner object
-     * @param publicationList list of publications
+     * @return Book to add to list
      */
-    public static Book bookDataInput(Scanner scanner, List<Publication> publicationList) {
+    public static Book bookDataInput(Scanner scanner) {
         System.out.print(Literals.PUB_TITLE);
         String title = scanner.nextLine();
         Language language = chooseLanguage(scanner);
@@ -93,12 +92,12 @@ public class Operations {
 
 
     /**
-     * lists available publications in the publicationList
-     * TODO refactor
+     * Sets the scene for selecting the publication of choice by printing every publication and checking if any publication
+     * with the title containing the entered string exists and if it is loanable
      *
      * @param scanner
      * @param publicationList
-     * @return returns chosen publication
+     * @return Found, chosen publication to loan
      */
     public static Publication selectPubToLoan(Scanner scanner, List<Publication> publicationList) {
         Publication publicationToLoan = null;
@@ -109,6 +108,7 @@ public class Operations {
 
         do {
             System.out.println("Unesite naslov publikacije za posudbu: ");
+            // string
             String selection = scanner.nextLine();
             filtered = filterPublications(publicationList, pub -> pub.getPublicationTitle().contains(selection));
 
@@ -117,14 +117,21 @@ public class Operations {
             } else {
                 System.out.println("Pronađene publikacije: ");
                 printPublicationList(scanner, filtered);
-                publicationToLoan = choosePublicationFromList(scanner, filtered).get();
+                publicationToLoan = chooseFromFiltered(scanner, filtered).get();
             }
         } while (filtered.isEmpty() || publicationToLoan == null);
 
         return publicationToLoan;
     }
 
-    private static Optional<Publication> choosePublicationFromList(Scanner scanner, List<Publication> publicationList) {
+    /**
+     * Prints all publications within the filtered publicationList and checks availability of chosen Book publications
+     *
+     * @param scanner
+     * @param publicationList List to iterate through and print data
+     * @return Chosen publication to loan
+     */
+    private static Optional<Publication> chooseFromFiltered(Scanner scanner, List<Publication> publicationList) {
         boolean matchNotFound = true;
         Publication publicationToLoan = null;
         int title = 0;
@@ -165,6 +172,12 @@ public class Operations {
         return publicationList.stream().filter(filterBy).collect(Collectors.toList());
     }
 
+    /**
+     * Prints out Publications contained in list
+     *
+     * @param scanner
+     * @param publicationList List to iterate through and print data
+     */
     private static void printPublicationList(Scanner scanner, List<Publication> publicationList) {
         boolean show = true;
 
@@ -180,6 +193,14 @@ public class Operations {
         }
     }
 
+
+    /**
+     * Prints out available commands to control the menu when listing
+     *
+     * @param scanner
+     * @param show    if true shows the menu options and waits for user interaction
+     * @return false if menu no longer required
+     */
     private static boolean printMenuCommands(Scanner scanner, boolean show) {
         boolean next;
         if (show) {
@@ -214,10 +235,10 @@ public class Operations {
 
 
     /**
-     * TODO handle wrong input
+     * Lists available enum types of publishing
      *
      * @param scanner
-     * @return
+     * @return chosen type of publishing
      */
     private static PublicationType listTypesOfPublishing(Scanner scanner) {
         int numberOfTypes = PublicationType.values().length;
@@ -272,6 +293,12 @@ public class Operations {
 
     }
 
+    /**
+     * Checks publicationList for duplicate Publications
+     * @param obj
+     * @param publicationList
+     * @throws DuplicatePublicationException if duplicate publication found
+     */
     public static void checkForDuplicate(Publication obj, List<Publication> publicationList) throws DuplicatePublicationException {
         for (Publication pub : publicationList) {
             if (pub.equals(obj)) {

@@ -2,35 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cee57479-af13-46b1-910d-d2a02cd1a31d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/enumerations/Language.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/Literals.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/exceptions/NonaffordablePublishingException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/PriceComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/enumerations/PublicationType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/exceptions/NonprofitablePublishingException.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/ForLoan.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/ForSale.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/exceptions/NonprofitablePublishingException.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/ForLoan.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/interfaces/ForLoan.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/ForSale.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/interfaces/ForSale.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Book.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/exceptions/DuplicatePublicationException.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/exceptions/DuplicatePublicationException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/utilities/HelpingHand.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/utilities/HelpingHand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Loan.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Loan.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Magazine.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Magazine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/base/Main.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/base/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Member.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Member.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/utilities/Operations.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/utilities/Operations.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Publication.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Publication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Publisher.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/entities/Publisher.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/Book.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/exceptions/DuplicatePublicationException.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/exceptions/DuplicatePublicationException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/HelpingHand.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/HelpingHand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/Magazine.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/Magazine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/base/Main.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/base/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/interfaces/ForSale.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/interfaces/ForSale.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/Operations.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/Operations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/Publication.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/Publication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Filipovic-1.iws" />
@@ -60,18 +36,18 @@
       <file leaf-file-name="Operations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/Operations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="5436">
-              <caret line="46" column="63" selection-start-line="46" selection-start-column="63" selection-end-line="46" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="5277" max-vertical-offset="5922">
+              <caret line="334" column="0" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/base/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.27058825" vertical-offset="1367" max-vertical-offset="1998">
-              <caret line="77" column="107" selection-start-line="77" selection-start-column="107" selection-end-line="77" selection-end-column="107" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1367" max-vertical-offset="1998">
+              <caret line="110" column="56" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -97,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForSale.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ForSale.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/interfaces/ForSale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.15706806" vertical-offset="0" max-vertical-offset="573">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -174,14 +150,14 @@
         <option value="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/enumerations/Language.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/enumerations/PublicationType.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/interfaces/ForLoan.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/interfaces/ForSale.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/HelpingHand.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/Publication.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/exceptions/MemberNotEnteredException.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/Magazine.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/Operations.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/base/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/Operations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/interfaces/ForSale.java" />
       </list>
     </option>
   </component>
@@ -768,12 +744,12 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3021978" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32637364" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12942614" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3021978" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267544" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3021978" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32637364" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1898657" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1148,22 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/Literals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/HelpingHand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/enumerations/PublicationType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33909288" vertical-offset="23" max-vertical-offset="504">
@@ -1221,14 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/interfaces/ForSale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/entities/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
@@ -1245,18 +1197,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/Operations.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/base/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="5436">
-          <caret line="46" column="63" selection-start-line="46" selection-start-column="63" selection-end-line="46" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1367" max-vertical-offset="1998">
+          <caret line="110" column="56" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/base/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/Literals.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.27058825" vertical-offset="1367" max-vertical-offset="1998">
-          <caret line="77" column="107" selection-start-line="77" selection-start-column="107" selection-end-line="77" selection-end-column="107" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/HelpingHand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/Operations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5277" max-vertical-offset="5922">
+          <caret line="334" column="0" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/interfaces/ForSale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15706806" vertical-offset="0" max-vertical-offset="573">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>

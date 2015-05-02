@@ -44,7 +44,7 @@ public class Main {
                 added = false;
                 System.out.println(String.format("Unesite podatke za %d. knjigu", i));
                 try {
-                    if (!(added = Operations.addPublication(Operations.bookDataInput(scanner, publicationList), publicationList))) {
+                    if (!(added = Operations.addPublication(Operations.bookDataInput(scanner), publicationList))) {
                         System.out.println("Greška, ponovno unesite: ");
                     } else {
                         i++;
@@ -58,7 +58,7 @@ public class Main {
             do {
                 System.out.println(String.format("Unesite podatke za %d. casopis", i));
                 try {
-                    if (!(added = Operations.addPublication(Operations.magazineDataInput(scanner, publicationList), publicationList))) {
+                    if (!(added = Operations.addPublication(Operations.magazineDataInput(scanner), publicationList))) {
                         System.out.println("Greska, ponovno uesite: ");
                     } else {
                         i++;
