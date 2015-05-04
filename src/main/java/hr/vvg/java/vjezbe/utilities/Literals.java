@@ -1,6 +1,7 @@
 package hr.vvg.java.vjezbe.utilities;
 
 /**
+ * Class with constant values used across the app
  * Created by marko on 4/11/15.
  */
 public class Literals {
@@ -13,4 +14,8 @@ public class Literals {
     public static final String PUB_PAGES = "Broj stranica: ";
     public static final String PUB_YEAR = "Godina izdanja: ";
     public static final String PUB_MONTH = "Mjesec izdanja: ";
+
+    public static final String CONTINUE = "C";
+    public static final String CONFIRM = "da";
+    public static final String CANCEL = "ne";
 }

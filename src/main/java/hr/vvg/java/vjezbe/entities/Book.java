@@ -55,23 +55,23 @@ public class Book extends Publication implements ForLoan {
 
     @Override
     public String getData() {
-        return String.format("Naslov: %s\nGodina izdanja: %d\nBroj stranica: %d\nTip publikacije: %s\nCijena: %sHRK\nJezik knjige: %s\nIzdavač: %s\nDržava izdavača: %s, Dostupno za posudbu: %s", getPublicationTitle(), getYearPublished(), getNumberOfPages(), getTypeOfPublication().getFriendlyName(), getPriceOfPublication().toPlainString(), getLanguage().getFriendlyName(), getPublisher().getName(), getPublisher().getCountry(), checkAvailability() ? "Da" : "Ne");
+        return String.format("Naslov: %s\nGodina izdanja: %d\nBroj stranica: %d\nTip publikacije: %s\nCijena: %sHRK\nJezik knjige: %s\nIzdavač: %s\nDržava izdavača: %s\nDostupno za posudbu: %s", getPublicationTitle(), getYearPublished(), getNumberOfPages(), getTypeOfPublication().getFriendlyName(), getPriceOfPublication().toPlainString(), getLanguage().getFriendlyName(), getPublisher().getName(), getPublisher().getCountry(), isAvailable() ? "Da" : "Ne");
     }
 
     @Override
     public void borrow() {
         this.available = false;
-        logger.info("knjiga %s posudjena", getPublicationTitle());
+        logger.info("knjiga %s posudjena", super.getPublicationTitle());
     }
 
     @Override
     public void giveBack() {
         this.available = true;
-        logger.info("knjiga %s vracena", getPublicationTitle());
+        logger.info("knjiga %s vracena", super.getPublicationTitle());
     }
 
     @Override
-    public boolean checkAvailability() {
+    public boolean isAvailable() {
         return this.available;
     }
 

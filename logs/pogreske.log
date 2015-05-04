@@ -1,776 +1,145 @@
-2015-04-11 20:28:40,336 WARN [main] h.v.j.v.b.Main [Main.java:74] kreiranje testnih objekata!
-2015-04-11 20:28:40,352 INFO [main] h.v.j.v.e.Book [Book.java:35] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: ENGLESKI
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 20:37:05,680 WARN [main] h.v.j.v.b.Main [Main.java:74] kreiranje testnih objekata!
-2015-04-11 20:37:05,696 INFO [main] h.v.j.v.e.Book [Book.java:35] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: ENGLESKI
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 20:40:52,051 WARN [main] h.v.j.v.b.Main [Main.java:74] kreiranje testnih objekata!
-2015-04-11 20:40:52,067 INFO [main] h.v.j.v.e.Book [Book.java:35] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: ENGLESKI
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 20:42:34,725 WARN [main] h.v.j.v.b.Main [Main.java:74] kreiranje testnih objekata!
-2015-04-11 20:42:34,742 INFO [main] h.v.j.v.e.Book [Book.java:35] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: ENGLESKI
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 20:44:33,225 WARN [main] h.v.j.v.b.Main [Main.java:74] kreiranje testnih objekata!
-2015-04-11 20:44:33,242 INFO [main] h.v.j.v.e.Book [Book.java:35] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: ENGLESKI
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 20:44:33,245 WARN [main] h.v.j.v.e.Book [Book.java:90] knjiga Through thick fog till death neisplativa
-2015-04-11 20:45:27,568 WARN [main] h.v.j.v.b.Main [Main.java:74] kreiranje testnih objekata!
-2015-04-11 20:45:27,585 INFO [main] h.v.j.v.e.Book [Book.java:35] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: ENGLESKI
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 20:45:27,588 WARN [main] h.v.j.v.e.Book [Book.java:90] knjiga Through thick fog till death neisplativa
-2015-04-11 20:46:15,943 WARN [main] h.v.j.v.b.Main [Main.java:74] kreiranje testnih objekata!
-2015-04-11 20:46:15,959 INFO [main] h.v.j.v.e.Book [Book.java:35] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: ENGLESKI
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 20:46:15,962 WARN [main] h.v.j.v.e.Book [Book.java:90] knjiga Through thick fog till death neisplativa
-2015-04-11 20:47:40,183 WARN [main] h.v.j.v.b.Main [Main.java:74] kreiranje testnih objekata!
-2015-04-11 20:47:40,200 INFO [main] h.v.j.v.e.Book [Book.java:35] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: ENGLESKI
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 20:47:42,959 WARN [main] h.v.j.v.e.Book [Book.java:90] knjiga Through thick fog till death neisplativa
-2015-04-11 20:56:52,838 WARN [main] h.v.j.v.b.Main [Main.java:74] kreiranje testnih objekata!
-2015-04-11 20:56:52,858 WARN [main] h.v.j.v.u.Operations [Operations.java:165] Pronadjen duplikat!Madames in skirtes
-2015-04-11 20:56:52,863 INFO [main] h.v.j.v.e.Book [Book.java:35] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: ENGLESKI
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 21:08:35,718 WARN [main] h.v.j.v.b.Main [Main.java:74] kreiranje testnih objekata!
-2015-04-11 21:08:35,738 WARN [main] h.v.j.v.u.Operations [Operations.java:165] Pronadjen duplikat!Madames in skirtes
-2015-04-11 21:08:35,743 INFO [main] h.v.j.v.e.Book [Book.java:35] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: ENGLESKI
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 21:09:00,398 WARN [main] h.v.j.v.b.Main [Main.java:74] kreiranje testnih objekata!
-2015-04-11 21:09:00,418 INFO [main] h.v.j.v.e.Book [Book.java:35] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: ENGLESKI
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 21:09:14,090 WARN [main] h.v.j.v.e.Book [Book.java:90] knjiga Through thick fog till death neisplativa
-2015-04-11 21:09:14,171 INFO [main] h.v.j.v.b.Main [Main.java:58] Najskuplja publikacija
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: ENGLESKI
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 21:10:53,282 WARN [main] h.v.j.v.b.Main [Main.java:74] kreiranje testnih objekata!
-2015-04-11 21:10:53,302 INFO [main] h.v.j.v.e.Book [Book.java:35] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 21:10:54,685 WARN [main] h.v.j.v.e.Book [Book.java:90] knjiga Through thick fog till death neisplativa
-2015-04-11 21:10:54,764 INFO [main] h.v.j.v.b.Main [Main.java:58] Najskuplja publikacija
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: PAPER
-Cijena: 1120.00HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-11 22:43:02,732 INFO [main] h.v.j.v.e.Book [Book.java:37] Book created
-Naslov: mali princ
-Godina izdanja: 1234
-Broj stranica: 333
-Tip publikacije: PAPER
-Cijena: 233.10HRK
-Jezik knjige: Njemacki
-Izdavač: 
-Država izdavača: hrvatska
-2015-04-11 22:53:43,159 INFO [main] h.v.j.v.e.Book [Book.java:37] Book created
-Naslov: dfdf
-Godina izdanja: 2034
-Broj stranica: 324
-Tip publikacije: PAPER
-Cijena: 226.80HRK
-Jezik knjige: Francuski
-Izdavač: konj
-Država izdavača: hrvatska
-2015-04-11 22:54:03,645 WARN [main] h.v.j.v.e.Book [Book.java:92] knjiga  neisplativa
-2015-04-11 23:41:28,184 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: mali princ
-Godina izdanja: 2033
-Broj stranica: 233
-Tip publikacije: PAPER
-Cijena: 163.10HRK
-Jezik knjige: Francuski
-Izdavač: kr
-Država izdavača: kff
-2015-04-11 23:42:47,579 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: mali princ
-Godina izdanja: 3434
-Broj stranica: 222
-Tip publikacije: PAPER
-Cijena: 155.40HRK
-Jezik knjige: Francuski
-Izdavač: fsdfsdf
-Država izdavača: sdfdf
-2015-04-11 23:43:01,823 WARN [main] h.v.j.v.e.Book [Book.java:96] knjiga sfsdfsdf neisplativa
-2015-04-11 23:43:01,834 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: sfsdfsdf
-Godina izdanja: 234
-Broj stranica: 234
-Tip publikacije: DIGITAL
-Cijena: 9.64HRK
-Jezik knjige: Njemacki
-Izdavač: sdfsfsd
-Država izdavača: sdfsd
-2015-04-14 23:38:40,469 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: mali princ
+2015-05-03 13:20:54,136 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: mko
 Godina izdanja: 1234
 Broj stranica: 1234
-Tip publikacije: PAPER
-Cijena: 863.80HRK
-Jezik knjige: Talijanski
-Izdavač: mali
-Država izdavača: princ
-2015-04-14 23:38:57,743 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: mali princ
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Njemacki
+Izdavač: qwe
+Država izdavača: qwer
+Dostupno za posudbu: Da
+2015-05-03 13:20:59,248 INFO [main] h.v.j.v.u.Operations [Operations.java:233] Najskuplja publikacija
+Naslov: mko
 Godina izdanja: 1234
 Broj stranica: 1234
-Tip publikacije: PAPER
-Cijena: 863.80HRK
-Jezik knjige: Talijanski
-Izdavač: mali
-Država izdavača: princ
-2015-04-14 23:40:53,698 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Njemacki
+Izdavač: qwe
+Država izdavača: qwer
+Dostupno za posudbu: Da
+2015-05-03 13:20:59,248 INFO [main] h.v.j.v.e.Library [Library.java:36] Logging available books
+2015-05-03 13:20:59,255 DEBUG [main] h.v.j.v.e.Library [Library.java:40] is instance of saletrue
+2015-05-03 13:20:59,258 INFO [main] h.v.j.v.e.Library [Library.java:45] dostupno:
+Naslov: mko
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Njemacki
+Izdavač: qwe
+Država izdavača: qwer
+Dostupno za posudbu: Da
+2015-05-03 13:21:07,508 INFO [main] h.v.j.v.e.Book [Book.java:64] knjiga %s posudjena
+2015-05-03 13:21:49,715 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
 Naslov: mali
 Godina izdanja: 1234
 Broj stranica: 1234
-Tip publikacije: PAPER
-Cijena: 863.80HRK
-Jezik knjige: Francuski
-Izdavač: mali
-Država izdavača: mali
-2015-04-14 23:41:05,091 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Njemacki
+Izdavač: drakon
+Država izdavača: dra
+Dostupno za posudbu: Da
+2015-05-03 13:21:54,383 INFO [main] h.v.j.v.u.Operations [Operations.java:233] Najskuplja publikacija
+Naslov: mko
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Njemacki
+Izdavač: qwe
+Država izdavača: qwer
+Dostupno za posudbu: Ne
+2015-05-03 13:21:54,383 INFO [main] h.v.j.v.e.Library [Library.java:36] Logging available books
+2015-05-03 13:21:54,384 DEBUG [main] h.v.j.v.e.Library [Library.java:40] is instance of saletrue
+2015-05-03 13:21:54,384 DEBUG [main] h.v.j.v.e.Library [Library.java:40] is instance of saletrue
+2015-05-03 13:21:54,387 INFO [main] h.v.j.v.e.Library [Library.java:45] dostupno:
 Naslov: mali
 Godina izdanja: 1234
 Broj stranica: 1234
-Tip publikacije: PAPER
-Cijena: 863.80HRK
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Njemacki
+Izdavač: drakon
+Država izdavača: dra
+Dostupno za posudbu: Da
+2015-05-03 14:37:11,581 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: mjeee
+Godina izdanja: 12345
+Broj stranica: 1234
+Tip publikacije: Elektronicka
+Cijena: 123.40HRK
 Jezik knjige: Francuski
-Izdavač: mali
-Država izdavača: mali
-2015-04-14 23:41:05,098 WARN [main] h.v.j.v.u.Operations [Operations.java:173] Pronadjen duplikat!mali
-2015-04-16 23:22:46,072 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: burek
-Godina izdanja: 1234
+Izdavač: asdfg
+Država izdavača: asdfg
+Dostupno za posudbu: Da
+2015-05-03 14:37:38,781 INFO [main] h.v.j.v.u.Operations [Operations.java:233] Najskuplja publikacija
+Naslov: mjeee
+Godina izdanja: 12345
 Broj stranica: 1234
-Tip publikacije: PAPER
-Cijena: 863.80HRK
+Tip publikacije: Elektronicka
+Cijena: 123.40HRK
 Jezik knjige: Francuski
-Izdavač: burek
-Država izdavača: burek
-2015-04-16 23:22:58,511 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: burek
+Izdavač: asdfg
+Država izdavača: asdfg
+Dostupno za posudbu: Da
+2015-05-03 14:37:38,782 INFO [main] h.v.j.v.e.Library [Library.java:36] Logging available books
+2015-05-03 14:37:38,790 DEBUG [main] h.v.j.v.e.Library [Library.java:40] is instance of saletrue
+2015-05-03 14:37:38,790 DEBUG [main] h.v.j.v.e.Library [Library.java:40] is instance of saletrue
+2015-05-03 14:44:14,961 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: mali
+Godina izdanja: 12344
+Broj stranica: 1234
+Tip publikacije: Elektronicka
+Cijena: 123.40HRK
+Jezik knjige: Njemacki
+Izdavač: ajde
+Država izdavača: adsf
+Dostupno za posudbu: Da
+2015-05-03 14:44:21,816 INFO [main] h.v.j.v.u.Operations [Operations.java:233] Najskuplja publikacija
+Naslov: ajde
 Godina izdanja: 1234
 Broj stranica: 1234
-Tip publikacije: PAPER
-Cijena: 863.80HRK
-Jezik knjige: Francuski
-Izdavač: burek
-Država izdavača: burek
-2015-04-16 23:22:58,513 WARN [main] h.v.j.v.u.Operations [Operations.java:181] Pronadjen duplikat!burek
-2015-04-16 23:22:58,532 ERROR [main] h.v.j.v.u.Operations [Operations.java:171] Duplikat publikacije!Naslov: burek
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: PAPER
-Cijena: 863.80HRK
-Jezik knjige: Francuski
-Izdavač: burek
-Država izdavača: burek
-hr.vvg.java.vjezbe.exceptions.DuplicatePublicationException: Vec postoji publikacija s tim podacima! burek
-	at hr.vvg.java.vjezbe.utilities.Operations.checkForDuplicate(Operations.java:182) [classes/:na]
-	at hr.vvg.java.vjezbe.utilities.Operations.addPublication(Operations.java:168) [classes/:na]
-	at hr.vvg.java.vjezbe.utilities.Operations.bookDataInput(Operations.java:72) [classes/:na]
-	at hr.vvg.java.vjezbe.base.Main.main(Main.java:43) [classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
-	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:na]
-2015-04-16 23:23:20,324 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: burek2
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: PAPER
-Cijena: 863.80HRK
-Jezik knjige: Talijanski
-Izdavač: rekbu
-Država izdavača: rekbu
-2015-04-16 23:23:52,195 INFO [main] h.v.j.v.u.Operations [Operations.java:139] Najskuplja publikacija
-Naslov: modra
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: DIGITAL
+Tip publikacije: Elektronicka
 Cijena: 8958.12HRK
-Mjesec izdanja: 3
-2015-04-16 23:25:12,211 WARN [main] h.v.j.v.b.Main [Main.java:66] kreiranje testnih objekata!
-2015-04-16 23:25:12,230 WARN [main] h.v.j.v.e.Magazine [Magazine.java:53] casopis Top Fear neisplativ
-2015-04-16 23:25:12,238 WARN [main] h.v.j.v.e.Book [Book.java:96] knjiga Ko guske kroz maglu neisplativa
-2015-04-16 23:25:12,240 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: DIGITAL
-Cijena: 65.89HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-16 23:25:15,599 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 302
-Tip publikacije: PAPER
-Cijena: 211.40HRK
-Jezik knjige: Francuski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-16 23:25:50,747 WARN [main] h.v.j.v.b.Main [Main.java:66] kreiranje testnih objekata!
-2015-04-16 23:25:50,764 WARN [main] h.v.j.v.e.Magazine [Magazine.java:53] casopis Top Fear neisplativ
-2015-04-16 23:25:50,769 WARN [main] h.v.j.v.e.Book [Book.java:96] knjiga Ko guske kroz maglu neisplativa
-2015-04-16 23:25:50,770 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: DIGITAL
-Cijena: 65.89HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-16 23:25:53,425 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 302
-Tip publikacije: PAPER
-Cijena: 211.40HRK
-Jezik knjige: Francuski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-16 23:25:53,517 INFO [main] h.v.j.v.u.Operations [Operations.java:139] Najskuplja publikacija
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 302
-Tip publikacije: PAPER
-Cijena: 211.40HRK
-Jezik knjige: Francuski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-16 23:26:07,359 WARN [main] h.v.j.v.b.Main [Main.java:66] kreiranje testnih objekata!
-2015-04-16 23:26:07,410 WARN [main] h.v.j.v.e.Magazine [Magazine.java:53] casopis Top Fear neisplativ
-2015-04-16 23:26:07,422 WARN [main] h.v.j.v.e.Book [Book.java:96] knjiga Ko guske kroz maglu neisplativa
-2015-04-16 23:26:07,425 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: DIGITAL
-Cijena: 65.89HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-16 23:26:12,030 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 302
-Tip publikacije: PAPER
-Cijena: 211.40HRK
-Jezik knjige: Francuski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-16 23:26:12,224 INFO [main] h.v.j.v.u.Operations [Operations.java:139] Najskuplja publikacija
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 302
-Tip publikacije: PAPER
-Cijena: 211.40HRK
-Jezik knjige: Francuski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-16 23:26:38,073 WARN [main] h.v.j.v.b.Main [Main.java:66] kreiranje testnih objekata!
-2015-04-16 23:26:38,099 WARN [main] h.v.j.v.e.Magazine [Magazine.java:53] casopis Top Fear neisplativ
-2015-04-16 23:26:38,105 WARN [main] h.v.j.v.e.Book [Book.java:96] knjiga Ko guske kroz maglu neisplativa
-2015-04-16 23:26:38,106 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: DIGITAL
-Cijena: 65.89HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-16 23:26:40,396 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 302
-Tip publikacije: PAPER
-Cijena: 211.40HRK
-Jezik knjige: Francuski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-16 23:26:40,495 INFO [main] h.v.j.v.u.Operations [Operations.java:139] Najskuplja publikacija
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 302
-Tip publikacije: PAPER
-Cijena: 211.40HRK
-Jezik knjige: Francuski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-21 00:01:35,989 WARN [main] h.v.j.v.b.Main [Main.java:65] kreiranje testnih objekata!
-2015-04-21 00:01:36,008 WARN [main] h.v.j.v.e.Magazine [Magazine.java:53] casopis Top Fear neisplativ
-2015-04-21 00:01:36,012 WARN [main] h.v.j.v.e.Book [Book.java:96] knjiga Ko guske kroz maglu neisplativa
-2015-04-21 00:01:36,014 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: DIGITAL
-Cijena: 65.89HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-21 00:01:56,882 WARN [main] h.v.j.v.b.Main [Main.java:65] kreiranje testnih objekata!
-2015-04-21 00:01:56,907 WARN [main] h.v.j.v.e.Book [Book.java:96] knjiga Ko guske kroz maglu neisplativa
-2015-04-21 00:01:56,910 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: DIGITAL
-Cijena: 65.89HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-21 00:02:24,146 WARN [main] h.v.j.v.b.Main [Main.java:65] kreiranje testnih objekata!
-2015-04-21 00:02:24,164 WARN [main] h.v.j.v.e.Book [Book.java:96] knjiga Ko guske kroz maglu neisplativa
-2015-04-21 00:02:24,167 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: DIGITAL
-Cijena: 65.89HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-21 00:03:16,024 WARN [main] h.v.j.v.b.Main [Main.java:65] kreiranje testnih objekata!
-2015-04-21 00:03:16,044 WARN [main] h.v.j.v.e.Book [Book.java:96] knjiga Ko guske kroz maglu neisplativa
-2015-04-21 00:03:16,047 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 1600
-Tip publikacije: DIGITAL
-Cijena: 65.89HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-21 00:03:51,758 WARN [main] h.v.j.v.b.Main [Main.java:65] kreiranje testnih objekata!
-2015-04-21 00:03:51,779 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 16005
-Tip publikacije: DIGITAL
-Cijena: 659.03HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-21 00:03:54,845 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 3023
-Tip publikacije: PAPER
-Cijena: 2116.10HRK
-Jezik knjige: Talijanski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-21 00:03:54,895 INFO [main] h.v.j.v.u.Operations [Operations.java:140] Najskuplja publikacija
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 3023
-Tip publikacije: PAPER
-Cijena: 2116.10HRK
-Jezik knjige: Talijanski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-21 00:06:15,659 WARN [main] h.v.j.v.b.Main [Main.java:64] kreiranje testnih objekata!
-2015-04-21 00:06:15,680 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 16005
-Tip publikacije: DIGITAL
-Cijena: 659.03HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-21 00:06:30,612 WARN [main] h.v.j.v.b.Main [Main.java:64] kreiranje testnih objekata!
-2015-04-21 00:06:30,632 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 16005
-Tip publikacije: DIGITAL
-Cijena: 659.03HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-21 00:06:32,734 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 3023
-Tip publikacije: PAPER
-Cijena: 2116.10HRK
-Jezik knjige: Talijanski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-21 00:06:32,803 INFO [main] h.v.j.v.u.Operations [Operations.java:140] Najskuplja publikacija
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 3023
-Tip publikacije: PAPER
-Cijena: 2116.10HRK
-Jezik knjige: Talijanski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-21 00:12:08,209 WARN [main] h.v.j.v.b.Main [Main.java:64] kreiranje testnih objekata!
-2015-04-21 00:12:08,230 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 16005
-Tip publikacije: DIGITAL
-Cijena: 659.03HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-21 00:12:10,278 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 3023
-Tip publikacije: PAPER
-Cijena: 2116.10HRK
-Jezik knjige: Francuski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-21 00:12:10,355 INFO [main] h.v.j.v.u.Operations [Operations.java:141] Najskuplja publikacija
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 3023
-Tip publikacije: PAPER
-Cijena: 2116.10HRK
-Jezik knjige: Francuski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-21 00:12:42,156 WARN [main] h.v.j.v.b.Main [Main.java:64] kreiranje testnih objekata!
-2015-04-21 00:12:42,176 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 16005
-Tip publikacije: DIGITAL
-Cijena: 659.03HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-21 00:13:24,467 WARN [main] h.v.j.v.b.Main [Main.java:64] kreiranje testnih objekata!
-2015-04-21 00:13:24,489 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 16005
-Tip publikacije: DIGITAL
-Cijena: 659.03HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-21 00:13:26,783 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 3023
-Tip publikacije: PAPER
-Cijena: 2116.10HRK
-Jezik knjige: Talijanski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-21 00:13:26,853 INFO [main] h.v.j.v.u.Operations [Operations.java:140] Najskuplja publikacija
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 3023
-Tip publikacije: PAPER
-Cijena: 2116.10HRK
-Jezik knjige: Talijanski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-21 00:15:33,195 WARN [main] h.v.j.v.b.Main [Main.java:64] kreiranje testnih objekata!
-2015-04-21 00:15:33,216 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 16005
-Tip publikacije: DIGITAL
-Cijena: 659.03HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-04-21 00:15:35,320 INFO [main] h.v.j.v.e.Book [Book.java:41] Book created
-Naslov: Through thick fog till death
-Godina izdanja: 1989
-Broj stranica: 3023
-Tip publikacije: PAPER
-Cijena: 2116.10HRK
-Jezik knjige: Francuski
-Izdavač: Bobetko
-Država izdavača: England
-2015-04-21 00:15:35,416 INFO [main] h.v.j.v.u.Operations [Operations.java:141] Najskuplja publikacija
-Naslov: Top Fear
-Godina izdanja: 2011
-Broj stranica: 345
-Tip publikacije: DIGITAL
-Cijena: 700.15HRK
-Mjesec izdanja: 11
-2015-05-02 18:21:54,405 WARN [main] h.v.j.v.b.Main [Main.java:64] kreiranje testnih objekata!
-2015-05-02 18:21:54,446 INFO [main] h.v.j.v.e.Book [Book.java:43] Book created
-Naslov: Ko guske kroz maglu
-Godina izdanja: 1988
-Broj stranica: 16005
-Tip publikacije: DIGITAL
-Cijena: 659.03HRK
-Jezik knjige: Engleski
-Izdavač: Janko
-Država izdavača: Hrvatska
-2015-05-02 18:31:43,615 INFO [main] h.v.j.v.e.Book [Book.java:43] Book created
+Mjesec izdanja: 12
+2015-05-03 14:44:21,816 INFO [main] h.v.j.v.e.Library [Library.java:37] Logging available books
+2015-05-03 14:44:21,828 INFO [main] h.v.j.v.e.Library [Library.java:45] dostupno:
 Naslov: mali
-Godina izdanja: 1234
-Broj stranica: 12345
-Tip publikacije: PAPER
-Cijena: 8641.50HRK
-Jezik knjige: Njemacki
-Izdavač: sdfsds
-Država izdavača: asfaf
-2015-05-02 18:36:15,868 INFO [main] h.v.j.v.e.Book [Book.java:43] Book created
-Naslov: mali
-Godina izdanja: 4444
-Broj stranica: 3333
-Tip publikacije: PAPER
-Cijena: 2333.10HRK
-Jezik knjige: Francuski
-Izdavač: princ
-Država izdavača: hrvatska
-2015-05-02 18:36:45,716 WARN [main] h.v.j.v.u.Operations [Operations.java:230] Pronadjen duplikat!mali
-2015-05-02 18:36:45,724 ERROR [main] h.v.j.v.u.Operations [Operations.java:220] Duplikat publikacije!Naslov: mali
-Godina izdanja: 33
-Broj stranica: 21
-Tip publikacije: PAPER
-Cijena: 44.10HRK
-Mjesec izdanja: 3
-hr.vvg.java.vjezbe.exceptions.DuplicatePublicationException: Vec postoji publikacija s tim podacima! mali
-	at hr.vvg.java.vjezbe.utilities.Operations.checkForDuplicate(Operations.java:231) [classes/:na]
-	at hr.vvg.java.vjezbe.utilities.Operations.addPublication(Operations.java:217) [classes/:na]
-	at hr.vvg.java.vjezbe.utilities.Operations.magazineDataInput(Operations.java:47) [classes/:na]
-	at hr.vvg.java.vjezbe.base.Main.main(Main.java:48) [classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
-	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:na]
-2015-05-02 18:37:07,316 INFO [main] h.v.j.v.u.Operations [Operations.java:175] Najskuplja publikacija
-Naslov: mali
-Godina izdanja: 1234
-Broj stranica: 12345
-Tip publikacije: PAPER
-Cijena: 8641.50HRK
-Jezik knjige: Njemacki
-Izdavač: sdfsds
-Država izdavača: asfaf
-2015-05-02 18:48:11,231 WARN [main] h.v.j.v.e.Book [Book.java:103] knjiga hajde neisplativa
-2015-05-02 18:48:11,260 INFO [main] h.v.j.v.e.Book [Book.java:43] Book created
-Naslov: hajde
-Godina izdanja: 444
-Broj stranica: 33
-Tip publikacije: Papirnata
-Cijena: 23.10HRK
-Jezik knjige: Francuski
-Izdavač: asdfg
-Država izdavača: sdfag
-2015-05-02 22:21:37,169 INFO [main] h.v.j.v.e.Book [Book.java:43] Book created
-Naslov: mali princ
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 863.80HRK
-Jezik knjige: Njemacki
-Izdavač: asdfg
-Država izdavača: asdfg, Dostupno za posudbu: Da
-2015-05-02 22:21:56,526 INFO [main] h.v.j.v.e.Book [Book.java:43] Book created
-Naslov: mali jahac
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 863.80HRK
-Jezik knjige: Francuski
-Izdavač: asdfg
-Država izdavača: asdfg, Dostupno za posudbu: Da
-2015-05-02 22:22:34,298 INFO [main] h.v.j.v.u.Operations [Operations.java:218] Najskuplja publikacija
-Naslov: mali princ
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 863.80HRK
-Jezik knjige: Njemacki
-Izdavač: asdfg
-Država izdavača: asdfg, Dostupno za posudbu: Da
-2015-05-02 22:27:14,706 INFO [main] h.v.j.v.e.Book [Book.java:43] Book created
-Naslov: motori
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 863.80HRK
-Jezik knjige: Francuski
-Izdavač: 3
-Država izdavača: 2, Dostupno za posudbu: Da
-2015-05-02 22:27:29,070 WARN [main] h.v.j.v.e.Book [Book.java:103] knjiga motori i traktori neisplativa
-2015-05-02 22:27:29,075 INFO [main] h.v.j.v.e.Book [Book.java:43] Book created
-Naslov: motori i traktori
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Elektronicka
-Cijena: 50.82HRK
-Jezik knjige: Francuski
-Izdavač: 2
-Država izdavača: asdfg, Dostupno za posudbu: Da
-2015-05-02 22:36:54,101 WARN [main] h.v.j.v.e.Book [Book.java:103] knjiga asdf neisplativa
-2015-05-02 22:36:54,109 INFO [main] h.v.j.v.e.Book [Book.java:43] Book created
-Naslov: asdf
-Godina izdanja: 3232
-Broj stranica: 1
-Tip publikacije: Elektronicka
-Cijena: 0.05HRK
-Jezik knjige: Njemacki
-Izdavač: 2341
-Država izdavača: asdfg, Dostupno za posudbu: Da
-2015-05-02 22:54:15,648 WARN [main] h.v.j.v.e.Book [Book.java:99] knjiga asdf neisplativa
-2015-05-02 22:55:31,945 INFO [main] h.v.j.v.e.Book [Book.java:39] Book created
-Naslov: asdfg
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 863.80HRK
-Jezik knjige: Njemacki
-Izdavač: 4
-Država izdavača: 3, Dostupno za posudbu: Da
-2015-05-02 22:57:06,151 WARN [main] h.v.j.v.e.Book [Book.java:99] knjiga asfd neisplativa
-2015-05-02 22:57:21,364 INFO [main] h.v.j.v.e.Book [Book.java:39] Book created
-Naslov: sdfaf
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 863.80HRK
-Jezik knjige: Francuski
-Izdavač: 23f
-Država izdavača: fsdf, Dostupno za posudbu: Da
-2015-05-02 22:57:35,834 WARN [main] h.v.j.v.e.Book [Book.java:99] knjiga asdfaase neisplativa
-2015-05-02 22:58:11,534 WARN [main] h.v.j.v.e.Book [Book.java:99] knjiga asdfassee neisplativa
-2015-05-02 23:02:15,171 INFO [main] h.v.j.v.e.Book [Book.java:39] Book created
-Naslov: asdfg
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Elektronicka
-Cijena: 123.40HRK
-Jezik knjige: Francuski
-Izdavač: asdfg
-Država izdavača: asdfe, Dostupno za posudbu: Da
-2015-05-02 23:02:29,542 WARN [main] h.v.j.v.e.Book [Book.java:99] knjiga mali princ neisplativa
-2015-05-02 23:02:59,578 INFO [main] h.v.j.v.e.Book [Book.java:39] Book created
-Naslov: mali princ
-Godina izdanja: 1234
+Godina izdanja: 12344
 Broj stranica: 1234
 Tip publikacije: Elektronicka
 Cijena: 123.40HRK
 Jezik knjige: Njemacki
-Izdavač: asdfg
-Država izdavača: asdfg, Dostupno za posudbu: Da
-2015-05-02 23:03:11,797 INFO [main] h.v.j.v.e.Book [Book.java:39] Book created
-Naslov: mali auto
+Izdavač: ajde
+Država izdavača: adsf
+Dostupno za posudbu: Da
+2015-05-03 14:46:19,239 INFO [main] h.v.j.v.e.Book [Book.java:64] knjiga %s posudjena
+2015-05-03 14:46:45,610 INFO [main] h.v.j.v.u.Operations [Operations.java:233] Najskuplja publikacija
+Naslov: ajde
 Godina izdanja: 1234
 Broj stranica: 1234
 Tip publikacije: Elektronicka
-Cijena: 108.89HRK
-Jezik knjige: Hrvatski
-Izdavač: asdfg
-Država izdavača: asdfg, Dostupno za posudbu: Da
-2015-05-02 23:03:51,697 INFO [main] h.v.j.v.u.Operations [Operations.java:217] Najskuplja publikacija
-Naslov: mali princ
+Cijena: 8958.12HRK
+Mjesec izdanja: 12
+2015-05-03 14:46:45,610 INFO [main] h.v.j.v.e.Library [Library.java:37] Logging available books
+2015-05-03 15:14:11,670 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: mali
 Godina izdanja: 1234
 Broj stranica: 1234
 Tip publikacije: Elektronicka
 Cijena: 123.40HRK
-Jezik knjige: Njemacki
-Izdavač: asdfg
-Država izdavača: asdfg, Dostupno za posudbu: Da
+Jezik knjige: Engleski
+Izdavač: asdf
+Država izdavača: asdf
+Dostupno za posudbu: Da
+2015-05-03 15:14:17,869 INFO [main] h.v.j.v.u.Operations [Operations.java:226] Najskuplja publikacija
+Naslov: mali
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Elektronicka
+Cijena: 8958.12HRK
+Mjesec izdanja: 1
+2015-05-03 15:14:17,870 INFO [main] h.v.j.v.u.Operations [Operations.java:227] Najskuplja publikacije
+Optional[hr.vvg.java.vjezbe.entities.Book@1a52fbd]

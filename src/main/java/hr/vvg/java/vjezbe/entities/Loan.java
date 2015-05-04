@@ -7,13 +7,13 @@ import java.time.format.DateTimeFormatter;
  * Created by marko on 3/12/15.
  * Loan class
  */
-public class Loan {
+public class Loan<T extends Publication> {
     private LocalDateTime localDateTime;
 
-    private Publication pub;
+    private T pub;
     private Member member;
 
-    public Loan(Member member, Publication pub, LocalDateTime localDateTime) {
+    public Loan(Member member, T pub, LocalDateTime localDateTime) {
         this.member = member;
         this.pub = pub;
         this.localDateTime = localDateTime;
@@ -23,7 +23,7 @@ public class Loan {
         return member;
     }
 
-    public Publication getPub() {
+    public T getPub() {
         return pub;
     }
 
@@ -32,7 +32,7 @@ public class Loan {
     }
 
     public String loanDateToString() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
         return this.localDateTime.format(formatter);
     }
 
@@ -43,15 +43,7 @@ public class Loan {
     }
 
     private String getData() {
-        return String.format("Stanje posudbe\n%s\n%s\nPosudjeno datuma: %s", returnSubclassData(), member.getData(), this.loanDateToString());
+        return String.format("Stanje posudbe\n%s\n%s\nPosudjeno datuma: %s", getPub().getData(), member.getData(), this.loanDateToString());
     }
 
-    private String returnSubclassData() {
-        if (pub instanceof Book) {
-            return pub.getData();
-        } else if (pub instanceof Magazine) {
-            return pub.getData();
-        }
-        return "No info";
-    }
 }

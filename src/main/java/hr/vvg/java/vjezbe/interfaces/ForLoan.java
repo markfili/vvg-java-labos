@@ -9,5 +9,5 @@ public interface ForLoan {
 
     void giveBack();
 
-    boolean checkAvailability();
+    boolean isAvailable();
 }

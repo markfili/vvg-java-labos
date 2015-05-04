@@ -96,13 +96,13 @@ public class Operations {
      * with the title containing the entered string exists and if it is loanable
      *
      * @param scanner
-     * @param publicationList
+     * @param libraryList
      * @return Found, chosen publication to loan
      */
-    public static Publication selectPubToLoan(Scanner scanner, List<Publication> publicationList) {
+    public static Publication selectPubToLoan(Scanner scanner, List<Publication> libraryList) {
         Publication publicationToLoan = null;
         System.out.println(Literals.PUB_TO_LOAN);
-        printPublicationList(scanner, publicationList);
+        printPublicationList(scanner, libraryList);
 
         List<Publication> filtered;
 
@@ -110,7 +110,7 @@ public class Operations {
             System.out.println("Unesite naslov publikacije za posudbu: ");
             // string
             String selection = scanner.nextLine();
-            filtered = filterPublications(publicationList, pub -> pub.getPublicationTitle().contains(selection));
+            filtered = filterPublications(libraryList, pub -> pub.getPublicationTitle().contains(selection));
 
             if (filtered.isEmpty()) {
                 System.out.println("Nije pronadjena nijedna publikacija, pokusajte ponovno.");
@@ -125,47 +125,16 @@ public class Operations {
     }
 
     /**
-     * Prints all publications within the filtered publicationList and checks availability of chosen Book publications
+     * Handles choosing wanted publication title from the filtered list
      *
      * @param scanner
-     * @param publicationList List to iterate through and print data
+     * @param libraryList List to iterate through and print data
      * @return Chosen publication to loan
      */
-    private static Optional<Publication> chooseFromFiltered(Scanner scanner, List<Publication> publicationList) {
-        boolean matchNotFound = true;
-        Publication publicationToLoan = null;
-        int title = 0;
-
-        do {
-            System.out.println("Unesite redni broj naslova (1, 2,...)");
-            try {
-                title = Integer.parseInt(scanner.nextLine());
-            } catch (NumberFormatException nex) {
-                System.out.println("Nije unesen broj, pokusajte ponovno");
-            }
-        } while (title < 1 || title > publicationList.size());
-        while (matchNotFound) {
-            if (title > 0 && title <= publicationList.size()) {
-
-                publicationToLoan = publicationList.get(title - 1);
-
-                if (publicationToLoan instanceof Book) {
-                    if (((Book) publicationToLoan).checkAvailability()) {
-                        matchNotFound = false;
-                        ((Book) publicationToLoan).borrow();
-                    } else {
-                        System.out.println("Knjiga trenutno nije dostupna. Izaberite nešto drugo.");
-                    }
-                    // else if publication is magazine
-                } else {
-                    matchNotFound = false;
-                }
-
-            } else {
-                System.out.println("Pokusajte ponovo, unesite dio naslova.");
-            }
-        }
-        return Optional.of(publicationToLoan);
+    private static Optional<Publication> chooseFromFiltered(Scanner scanner, List<Publication> libraryList) {
+        System.out.println("Unesite redni broj naslova (1, 2,...)");
+        int title = HelpingHand.checkIntInRange(scanner, 1, libraryList.size()) - 1;
+        return Optional.of(libraryList.get(title));
     }
 
     private static List<Publication> filterPublications(List<Publication> publicationList, Predicate<Publication> filterBy) {
@@ -176,21 +145,10 @@ public class Operations {
      * Prints out Publications contained in list
      *
      * @param scanner
-     * @param publicationList List to iterate through and print data
+     * @param libraryList List to iterate through and print data
      */
-    private static void printPublicationList(Scanner scanner, List<Publication> publicationList) {
-        boolean show = true;
-
-        for (int i = 0; i < publicationList.size(); i++) {
-            System.out.println(String.format("%d. izbor", i + 1));
-            publicationList.get(i).printData();
-            System.out.println();
-
-            if (i < publicationList.size() - 1) {
-                show = printMenuCommands(scanner, show);
-            }
-
-        }
+    private static void printPublicationList(Scanner scanner, List<Publication> libraryList) {
+        libraryList.stream().forEach(Publication::printData);
     }
 
 
@@ -229,8 +187,9 @@ public class Operations {
     public static void sortByPrice(List<Publication> publicationList) {
 //        publicationList.sort((pub1, pub2) -> (pub1.getPriceOfPublication().compareTo(pub2.getPriceOfPublication())));
         Function<Publication, BigDecimal> byPrice = Publication::getPriceOfPublication;
-        publicationList.stream().sorted(Comparator.comparing(byPrice)).forEach(Publication::printData);
+        publicationList.stream().sorted(Comparator.comparing(byPrice));
         logger.info("Najskuplja publikacija\n" + publicationList.stream().findFirst().get().getData());
+        logger.info("Najskuplja publikacije\n" + Optional.of(publicationList.get(publicationList.size() - 1)));
     }
 
 
@@ -247,18 +206,9 @@ public class Operations {
 //            System.out.println(String.format("%d. %s", (i + 1), HelpingHand.upperFirst(typesOfPublishing[i])));
             System.out.println(String.format("%d. %s", typesOfPublishing[i].getId(), typesOfPublishing[i].getFriendlyName()));
         }
-
-        int type = 0;
-        do {
-            System.out.print("Vrsta broj: ");
-            try {
-                type = Integer.parseInt(scanner.nextLine());
-            } catch (NumberFormatException nfe) {
-                System.out.println("Nije unesen broj, pokusajte ponovno!");
-            }
-        } while ((type > numberOfTypes + 1) || (type < 1));
-
-        return typesOfPublishing[type - 1];
+        System.out.print("Vrsta broj: ");
+        int type = HelpingHand.checkIntInRange(scanner, 1, PublicationType.values().length) - 1;
+        return typesOfPublishing[type];
     }
 
 
@@ -268,8 +218,8 @@ public class Operations {
      * @param member    member loaning the publication data
      * @param pubToLoan publication being loaned
      */
-    public static void executeLoan(Member member, Publication pubToLoan) {
-        Loan loan = new Loan(member, pubToLoan, LocalDateTime.now());
+    public static <T extends Publication> void executeLoan(Member member, T pubToLoan) {
+        Loan<T> loan = new Loan<T>(member, pubToLoan, LocalDateTime.now());
         loan.printData();
     }
 
@@ -277,20 +227,21 @@ public class Operations {
      * checks if there's a duplicate publication on the list after a new publication has been entered
      * add publication to the list if there's no duplicate
      *
-     * @param pub             publication to add to publicationList
-     * @param publicationList list of by now added publications
+     * @param pub     publication to add to publicationList
+     * @param library a library object containing a list of by now added publications
      * @return true if added false if duplicate found
      */
-    public static boolean addPublication(Publication pub, List<Publication> publicationList) {
+    public static boolean addPublication(Publication pub, Library<Publication> library) {
         try {
-            checkForDuplicate(pub, publicationList);
-            return publicationList.add(pub);
+            checkForDuplicate(pub, library.getLibraryList());
+            library.acquire(pub);
+            return true;
         } catch (DuplicatePublicationException ex) {
             logger.error("Duplikat publikacije!" + pub.getData(), ex);
             System.out.println("Duplikat publikacije, pokusajte ponovno");
-            return false;
         }
 
+        return false;
     }
 
     /**
@@ -324,16 +275,7 @@ public class Operations {
         for (Language lang : Language.values()) {
             System.out.println(String.format("%d. %s", lang.getId(), lang.getFriendlyName()));
         }
-        int selection = 0;
-        do {
-            System.out.print("Odabir: ");
-            try {
-                selection = Integer.parseInt(scanner.nextLine());
-            } catch (NumberFormatException ex) {
-                System.out.println("Niste unijeli broj, pokušajte ponovno.");
-            }
-        } while (selection < 1 || selection > Language.values().length + 1);
-
-        return Language.values()[selection - 1];
+        int selection = HelpingHand.checkIntInRange(scanner, 1, Language.values().length) - 1;
+        return Language.values()[selection];
     }
 }

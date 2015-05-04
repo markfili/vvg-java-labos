@@ -3,12 +3,16 @@ package hr.vvg.java.vjezbe.base;
 import hr.vvg.java.vjezbe.entities.*;
 import hr.vvg.java.vjezbe.enumerations.Language;
 import hr.vvg.java.vjezbe.enumerations.PublicationType;
+import hr.vvg.java.vjezbe.enumerations.Publications;
 import hr.vvg.java.vjezbe.exceptions.NonaffordablePublishingException;
+import hr.vvg.java.vjezbe.utilities.HelpingHand;
+import hr.vvg.java.vjezbe.utilities.Literals;
 import hr.vvg.java.vjezbe.utilities.Operations;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -18,7 +22,7 @@ import java.util.Scanner;
  */
 public class Main {
 
-    private static final int NUMBER_OF_BOOKS = 2;
+    private static final int NUMBER_OF_BOOKS = 1;
     private static final int NUMBER_OF_MAGAZINES = 2;
     static Logger logger;
 
@@ -26,62 +30,61 @@ public class Main {
         logger = LoggerFactory.getLogger(Main.class);
         Scanner scanner = new Scanner(System.in);
 
-        List<Publication> publicationList = new ArrayList<>();
+        Library<Publication> library = new Library<>();
 
-        // TODO zakomentirati init testnih podataka
-//        Member member = initTestData(scanner, publicationList);
+        // init testnih podataka
+        // Member member = initTestData(scanner, library);
 
-        // TODO otkomentirati kako bi se omogucio unos knjiga, casopisa i podataka o clanu
         System.out.println("\t\t\tDobar dan!");
 
         // repeat main function until it gets no longer interesting
+        String decision;
         do {
-            System.out.printf("****************************************\n\tUnesite podatke za %d knjige i %d casopisa!\n****************************************\n", NUMBER_OF_BOOKS, NUMBER_OF_MAGAZINES);
+            boolean added = false;
+            System.out.println("Izaberite publikaciju za unos: ");
+            Arrays.asList(Publications.values()).stream().sorted().forEach(p -> System.out.println(p.toString()));
 
-            int i = 1;
-            boolean added;
-            do {
-                added = false;
-                System.out.println(String.format("Unesite podatke za %d. knjigu", i));
-                try {
-                    if (!(added = Operations.addPublication(Operations.bookDataInput(scanner), publicationList))) {
-                        System.out.println("Greška, ponovno unesite: ");
-                    } else {
-                        i++;
-                    }
-                } catch (NonaffordablePublishingException nex) {
-                    System.out.println(nex.getMessage());
+            Publications entering = Publications.values()[HelpingHand.checkIntInRange(scanner, 1, Publications.values().length) - 1];
+
+            System.out.println(String.format("Unesite podatke za " + entering.getFriendlyName().toLowerCase()));
+            try {
+                switch (entering) {
+                    case MAGAZINE:
+                        added = Operations.addPublication(Operations.magazineDataInput(scanner), library);
+                        break;
+
+                    case BOOK:
+                        added = Operations.addPublication(Operations.bookDataInput(scanner), library);
+                        break;
                 }
-            } while (i <= NUMBER_OF_BOOKS || !added);
-
-            i = 1;
-            do {
-                System.out.println(String.format("Unesite podatke za %d. casopis", i));
-                try {
-                    if (!(added = Operations.addPublication(Operations.magazineDataInput(scanner), publicationList))) {
-                        System.out.println("Greska, ponovno uesite: ");
-                    } else {
-                        i++;
-                    }
-                } catch (NonaffordablePublishingException nex) {
-                    System.out.println(nex.getMessage());
+                if (!(added)) {
+                    System.out.println("Greska, pokusajte ponovno.");
                 }
-            } while (i <= NUMBER_OF_MAGAZINES || !added);
+            } catch (NonaffordablePublishingException nex) {
+                System.out.println(nex.getMessage());
+            }
+            // TODO handle if decision not yes or no
+            System.out.println("Dodati jos publikacija? da/ne");
+            decision = scanner.nextLine().toLowerCase();
+            if (Literals.CANCEL.equals(decision)) {
 
-            System.out.println("\nPodaci clana");
-            Member backupMember = new Member("Leonard", "Davinčić", "212333314");
-            Member member = Operations.memberDataInput(scanner).orElse(backupMember);
+                System.out.println("\nPodaci clana");
+                Member backupMember = new Member("Leonard", "Davinčić", "212333314");
+                Member member = Operations.memberDataInput(scanner).orElse(backupMember);
 
-            Operations.sortByPrice(publicationList);
-            Operations.executeLoan(member, Operations.selectPubToLoan(scanner, publicationList));
+                Operations.sortByPrice(library.getLibraryList());
+                Operations.executeLoan(member, Operations.selectPubToLoan(scanner, library.getLibraryList()));
 
-            System.out.printf("Zelite li ponoviti unos knjiga i odabir posudbe? (Da za ponavljanje, bilosto za kraj)");
-        } while ("da".equals(scanner.nextLine().toLowerCase()));
+                System.out.printf("Zelite li unijeti nove publikacije i posuditi nesto drugo? (Da za ponavljanje, bilosto za kraj)");
+                decision = scanner.nextLine().toLowerCase();
+            }
+
+        } while (Literals.CONFIRM.equals(decision));
 
     }
 
 
-    private static Member initTestData(Scanner scanner, List<Publication> publicationList) {
+    private static Member initTestData(Scanner scanner, Library<Publication> library) {
 
         boolean exception = false;
         logger.warn("kreiranje testnih objekata!");
@@ -93,15 +96,15 @@ public class Main {
 
         try {
             magazineOne = new Magazine("Top Fear", 11, 2011, 345, PublicationType.DIGITAL);
-            Operations.addPublication(magazineOne, publicationList);
+            Operations.addPublication(magazineOne, library);
             magazineTwo = new Magazine("Madames in skirtes", 9, 1811, 2445, PublicationType.PAPER);
-            Operations.addPublication(magazineTwo, publicationList);
+            Operations.addPublication(magazineTwo, library);
 //            magazineThree = new Magazine("Madames in skirtes", 9, 1811, 24, Magazine.TYPE_ELECTRONIC);
 //            Operations.addPublication(magazineThree, publicationList);
             bookOne = new Book("Ko guske kroz maglu", Language.ENGLESKI, new Publisher("Janko", "Hrvatska"), 1988, 16005, PublicationType.DIGITAL);
-            Operations.addPublication(bookOne, publicationList);
+            Operations.addPublication(bookOne, library);
             bookTwo = new Book("Through thick fog till death", Operations.chooseLanguage(scanner), new Publisher("Bobetko", "England"), 1989, 3023, PublicationType.PAPER);
-            Operations.addPublication(bookTwo, publicationList);
+            Operations.addPublication(bookTwo, library);
 
         } catch (NonaffordablePublishingException ex) {
             ex.printStackTrace();
