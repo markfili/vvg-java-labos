@@ -143,3 +143,183 @@ Cijena: 8958.12HRK
 Mjesec izdanja: 1
 2015-05-03 15:14:17,870 INFO [main] h.v.j.v.u.Operations [Operations.java:227] Najskuplja publikacije
 Optional[hr.vvg.java.vjezbe.entities.Book@1a52fbd]
+2015-05-05 00:14:33,233 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: werwer
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Njemacki
+Izdavač: qwert
+Država izdavača: asdf
+Dostupno za posudbu: Da
+2015-05-05 00:14:42,681 INFO [main] h.v.j.v.u.Operations [Operations.java:191] Najskuplja publikacija
+Naslov: werwer
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Njemacki
+Izdavač: qwert
+Država izdavača: asdf
+Dostupno za posudbu: Da
+2015-05-05 00:14:42,682 INFO [main] h.v.j.v.u.Operations [Operations.java:192] Najskuplja publikacije
+Optional[hr.vvg.java.vjezbe.entities.Book@1a52fbd]
+2015-05-05 00:15:47,535 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: werwer
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Elektronicka
+Cijena: 123.40HRK
+Jezik knjige: Engleski
+Izdavač: asdfg
+Država izdavača: asdfg
+Dostupno za posudbu: Da
+2015-05-05 00:15:53,732 INFO [main] h.v.j.v.u.Operations [Operations.java:191] Najskuplja publikacija
+Naslov: werwer
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Njemacki
+Izdavač: qwert
+Država izdavača: asdf
+Dostupno za posudbu: Da
+2015-05-05 00:15:53,732 INFO [main] h.v.j.v.u.Operations [Operations.java:192] Najskuplja publikacije
+Optional[hr.vvg.java.vjezbe.entities.Book@1ccaa]
+2015-05-05 00:16:30,983 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: asdf
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Elektronicka
+Cijena: 123.40HRK
+Jezik knjige: Njemacki
+Izdavač: asdf
+Država izdavača: asdf
+Dostupno za posudbu: Da
+2015-05-05 00:16:40,135 INFO [main] h.v.j.v.u.Operations [Operations.java:191] Najskuplja publikacija
+Naslov: werwer
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Njemacki
+Izdavač: qwert
+Država izdavača: asdf
+Dostupno za posudbu: Da
+2015-05-05 00:16:40,136 INFO [main] h.v.j.v.u.Operations [Operations.java:192] Najskuplja publikacije
+Optional[hr.vvg.java.vjezbe.entities.Book@1c7db30]
+2015-05-05 00:24:26,742 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: asdf
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Engleski
+Izdavač: asdf
+Država izdavača: asdf
+Dostupno za posudbu: Da
+2015-05-05 00:24:34,757 INFO [main] h.v.j.v.u.Operations [Operations.java:199] Najskuplja publikacija
+Naslov: asdf
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Engleski
+Izdavač: asdf
+Država izdavača: asdf
+Dostupno za posudbu: Da
+2015-05-05 00:24:34,757 INFO [main] h.v.j.v.u.Operations [Operations.java:200] Najskuplja publikacije
+Optional[hr.vvg.java.vjezbe.entities.Book@1a52fbd]
+2015-05-05 00:24:51,743 INFO [main] h.v.j.v.e.Book [Book.java:64] knjiga %s posudjena
+2015-05-05 00:25:14,280 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: asdff
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Elektronicka
+Cijena: 123.40HRK
+Jezik knjige: Njemacki
+Izdavač: asdf
+Država izdavača: asdf
+Dostupno za posudbu: Da
+2015-05-05 00:25:19,708 INFO [main] h.v.j.v.u.Operations [Operations.java:199] Najskuplja publikacija
+Naslov: asdf
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Engleski
+Izdavač: asdf
+Država izdavača: asdf
+Dostupno za posudbu: Ne
+2015-05-05 00:25:19,711 INFO [main] h.v.j.v.u.Operations [Operations.java:200] Najskuplja publikacije
+Optional[hr.vvg.java.vjezbe.entities.Book@1531931]
+2015-05-14 13:48:39,234 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: mali
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Njemacki
+Izdavač: princ
+Država izdavača: asdfg
+Dostupno za posudbu: Da
+2015-05-14 13:48:56,443 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: asdf
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Njemacki
+Izdavač: asdfg
+Država izdavača: 12fff
+Dostupno za posudbu: Da
+2015-05-14 13:49:03,450 INFO [main] h.v.j.v.u.Operations [Operations.java:199] Najskuplja publikacija
+Naslov: asdf
+Godina izdanja: 2334
+Broj stranica: 2344
+Tip publikacije: Papirnata
+Cijena: 549433.60HRK
+Mjesec izdanja: 23
+2015-05-14 13:49:03,451 INFO [main] h.v.j.v.u.Operations [Operations.java:200] Najskuplja publikacije
+Optional[hr.vvg.java.vjezbe.entities.Book@1a52fbd]
+2015-05-14 14:25:58,953 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: aasdf
+Godina izdanja: 1234
+Broj stranica: 12345
+Tip publikacije: Elektronicka
+Cijena: 1234.50HRK
+Jezik knjige: Njemacki
+Izdavač: asdf
+Država izdavača: asdfg
+Dostupno za posudbu: Da
+2015-05-14 14:26:05,247 INFO [main] h.v.j.v.u.Operations [Operations.java:199] Najskuplja publikacija
+Naslov: asdf
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 152287.94HRK
+Mjesec izdanja: 12
+2015-05-14 14:26:05,247 INFO [main] h.v.j.v.u.Operations [Operations.java:200] Najskuplja publikacije
+Optional[hr.vvg.java.vjezbe.entities.Book@1a52fbd]
+2015-05-14 14:26:23,417 INFO [main] h.v.j.v.e.Book [Book.java:64] knjiga %s posudjena
+2015-05-14 14:26:45,110 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: asdfee
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Njemacki
+Izdavač: asdfa
+Država izdavača: safasdf
+Dostupno za posudbu: Da
+2015-05-14 14:26:51,345 INFO [main] h.v.j.v.u.Operations [Operations.java:199] Najskuplja publikacija
+Naslov: asdf
+Godina izdanja: 1234
+Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 152287.94HRK
+Mjesec izdanja: 12
+2015-05-14 14:26:51,346 INFO [main] h.v.j.v.u.Operations [Operations.java:200] Najskuplja publikacije
+Optional[hr.vvg.java.vjezbe.entities.Book@1bc7afb]
+2015-05-14 14:28:08,681 INFO [main] h.v.j.v.e.Book [Book.java:64] knjiga %s posudjena

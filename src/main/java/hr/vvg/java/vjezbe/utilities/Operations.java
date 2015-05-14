@@ -4,6 +4,7 @@ import hr.vvg.java.vjezbe.entities.*;
 import hr.vvg.java.vjezbe.enumerations.Language;
 import hr.vvg.java.vjezbe.enumerations.PublicationType;
 import hr.vvg.java.vjezbe.exceptions.DuplicatePublicationException;
+import hr.vvg.java.vjezbe.interfaces.ForLoan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -99,24 +100,27 @@ public class Operations {
      * @param libraryList
      * @return Found, chosen publication to loan
      */
-    public static Publication selectPubToLoan(Scanner scanner, List<Publication> libraryList) {
+    public static <T extends Publication> Publication selectPubToLoan(Scanner scanner, List<T> libraryList) {
         Publication publicationToLoan = null;
-        System.out.println(Literals.PUB_TO_LOAN);
-        printPublicationList(scanner, libraryList);
 
+        System.out.println(Literals.PUB_TO_LOAN);
+
+        Predicate<T> filterAvailable = t -> t instanceof ForLoan && ((ForLoan) t).isAvailable();
+
+        printPublicationList(filterPublications(libraryList, filterAvailable));
         List<Publication> filtered;
 
         do {
             System.out.println("Unesite naslov publikacije za posudbu: ");
             // string
             String selection = scanner.nextLine();
-            filtered = filterPublications(libraryList, pub -> pub.getPublicationTitle().contains(selection));
-
+            // filtered = filterPublications(libraryList, pub -> pub.getPublicationTitle().contains(selection));
+            filtered = libraryList.stream().filter(pub -> pub.getPublicationTitle().contains(selection)).collect(Collectors.toList());
             if (filtered.isEmpty()) {
                 System.out.println("Nije pronadjena nijedna publikacija, pokusajte ponovno.");
             } else {
                 System.out.println("Pronađene publikacije: ");
-                printPublicationList(scanner, filtered);
+                printPublicationList(filtered);
                 publicationToLoan = chooseFromFiltered(scanner, filtered).get();
             }
         } while (filtered.isEmpty() || publicationToLoan == null);
@@ -131,23 +135,25 @@ public class Operations {
      * @param libraryList List to iterate through and print data
      * @return Chosen publication to loan
      */
-    private static Optional<Publication> chooseFromFiltered(Scanner scanner, List<Publication> libraryList) {
+    private static <T extends Publication> Optional<T> chooseFromFiltered(Scanner scanner, List<T> libraryList) {
         System.out.println("Unesite redni broj naslova (1, 2,...)");
         int title = HelpingHand.checkIntInRange(scanner, 1, libraryList.size()) - 1;
+        if (libraryList.get(title) instanceof Book) {
+            ((Book) libraryList.get(title)).borrow();
+        }
         return Optional.of(libraryList.get(title));
     }
 
-    private static List<Publication> filterPublications(List<Publication> publicationList, Predicate<Publication> filterBy) {
+    private static <T extends Publication> List<T> filterPublications(List<T> publicationList, Predicate<T> filterBy) {
         return publicationList.stream().filter(filterBy).collect(Collectors.toList());
     }
 
     /**
      * Prints out Publications contained in list
      *
-     * @param scanner
      * @param libraryList List to iterate through and print data
      */
-    private static void printPublicationList(Scanner scanner, List<Publication> libraryList) {
+    private static <T extends Publication> void printPublicationList(List<T> libraryList) {
         libraryList.stream().forEach(Publication::printData);
     }
 
@@ -184,7 +190,7 @@ public class Operations {
      *
      * @param publicationList
      */
-    public static void sortByPrice(List<Publication> publicationList) {
+    public static <T extends Publication> void sortByPrice(List<T> publicationList) {
 //        publicationList.sort((pub1, pub2) -> (pub1.getPriceOfPublication().compareTo(pub2.getPriceOfPublication())));
         Function<Publication, BigDecimal> byPrice = Publication::getPriceOfPublication;
         publicationList.stream().sorted(Comparator.comparing(byPrice));
@@ -231,7 +237,7 @@ public class Operations {
      * @param library a library object containing a list of by now added publications
      * @return true if added false if duplicate found
      */
-    public static boolean addPublication(Publication pub, Library<Publication> library) {
+    public static <T extends Publication> boolean addPublication(T pub, Library<T> library) {
         try {
             checkForDuplicate(pub, library.getLibraryList());
             library.acquire(pub);
@@ -251,8 +257,8 @@ public class Operations {
      * @param publicationList
      * @throws DuplicatePublicationException if duplicate publication found
      */
-    public static void checkForDuplicate(Publication obj, List<Publication> publicationList) throws DuplicatePublicationException {
-        for (Publication pub : publicationList) {
+    public static <T extends Publication> void checkForDuplicate(T obj, List<T> publicationList) throws DuplicatePublicationException {
+        for (T pub : publicationList) {
             if (pub.equals(obj)) {
                 logger.warn("Pronadjen duplikat!" + obj.getPublicationTitle());
                 throw new DuplicatePublicationException("Vec postoji publikacija s tim podacima! " + obj.getPublicationTitle());

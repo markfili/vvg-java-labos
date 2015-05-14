@@ -36,7 +36,7 @@ public class HelpingHand {
                     notOk = false;
                 }
             } catch (NumberFormatException|ResultOutOfRange ex) {
-                System.out.println(ex.getMessage() + "Pokusajte ponovno.");
+                System.out.println(ex.getLocalizedMessage() + "Pokusajte ponovno.");
                 notOk = true;
             }
         } while (notOk);
