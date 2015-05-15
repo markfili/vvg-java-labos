@@ -11,9 +11,7 @@ import hr.vvg.java.vjezbe.utilities.Operations;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -22,24 +20,27 @@ import java.util.Scanner;
  */
 public class Main {
 
-    private static final int NUMBER_OF_BOOKS = 1;
-    private static final int NUMBER_OF_MAGAZINES = 2;
-    static Logger logger;
+    private static Logger logger;
 
     public static void main(String[] args) {
+
         logger = LoggerFactory.getLogger(Main.class);
         Scanner scanner = new Scanner(System.in);
 
         Library<Publication> library = new Library<>();
+        Operations.getBooks(library);
+        Operations.getMagazines(library);
 
-        // init testnih podataka
-        // Member member = initTestData(scanner, library);
-
-        System.out.println("\t\t\tDobar dan!");
+        System.out.println("\t\tDobar dan!");
+        Operations.getMember().printData();
 
         // repeat main function until it gets no longer interesting
         String decision;
         do {
+
+            System.out.println("Danas na meniju nudimo sljedece dostupne publikacije:");
+            Operations.printPublicationList(library.getLibraryList());
+
             boolean added = false;
             System.out.println("Izaberite publikaciju za unos: ");
             Arrays.asList(Publications.values()).stream().sorted().forEach(p -> System.out.println(p.toString()));
@@ -69,11 +70,11 @@ public class Main {
             if (Literals.CANCEL.equals(decision)) {
 
                 System.out.println("\nPodaci clana");
-                Member backupMember = new Member("Leonard", "Davinčić", "212333314");
-                Member member = Operations.memberDataInput(scanner).orElse(backupMember);
+                // Member backupMember = new Member("Leonard", "Davinčić", "212333314");
+                // Member member = Operations.memberDataInput(scanner).orElse(backupMember);
 
                 Operations.sortByPrice(library.getLibraryList());
-                Operations.executeLoan(member, Operations.selectPubToLoan(scanner, library.getLibraryList()));
+                Operations.executeLoan(Operations.getMember(), Operations.selectPubToLoan(scanner, library.getLibraryList()));
 
                 System.out.printf("Zelite li unijeti nove publikacije i posuditi nesto drugo? (Da za ponavljanje, bilosto za kraj)");
                 decision = scanner.nextLine().toLowerCase();
@@ -82,7 +83,6 @@ public class Main {
         } while (Literals.CONFIRM.equals(decision));
 
     }
-
 
     private static Member initTestData(Scanner scanner, Library<Publication> library) {
 
@@ -108,11 +108,9 @@ public class Main {
 
         } catch (NonaffordablePublishingException ex) {
             ex.printStackTrace();
-            exception = true;
         }
 
         return new Member("Ivan", "Ivić", "2032323224");
     }
-
 
 }

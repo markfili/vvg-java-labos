@@ -44,6 +44,11 @@ public class Magazine extends Publication {
     }
 
     @Override
+    public String fileData() {
+        return String.format("%s\n%s\n%s\n%s\n%s\n", getPublicationTitle(), getMonthPublished(), getYearPublished(), getNumberOfPages(), getTypeOfPublication().getId());
+    }
+
+    @Override
     public void checkAffordability(BigDecimal price) {
         if (BigDecimal.valueOf(0.1).compareTo(price) != -1) {
             logger.warn(String.format("casopis %s neisplativ", getPublicationTitle()));

@@ -24,6 +24,8 @@
         <processorPath useClasspath="true" />
         <module name="Filipovic-3" />
         <module name="Filipovic-4" />
+        <module name="Filipovic-5" />
+        <module name="Filipovic-6" />
       </profile>
     </annotationProcessing>
   </component>

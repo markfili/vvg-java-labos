@@ -1,325 +1,179 @@
-2015-05-03 13:20:54,136 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
-Naslov: mko
+2015-05-15 01:25:11,399 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:26] Read file operations
+2015-05-15 01:25:11,499 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: asdf
 Godina izdanja: 1234
 Broj stranica: 1234
 Tip publikacije: Papirnata
 Cijena: 2097.80HRK
-Jezik knjige: Njemacki
-Izdavač: qwe
-Država izdavača: qwer
+Jezik knjige: Engleski
+Izdavač: sadfa
+Država izdavača: safs
 Dostupno za posudbu: Da
-2015-05-03 13:20:59,248 INFO [main] h.v.j.v.u.Operations [Operations.java:233] Najskuplja publikacija
-Naslov: mko
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 2097.80HRK
-Jezik knjige: Njemacki
-Izdavač: qwe
-Država izdavača: qwer
-Dostupno za posudbu: Da
-2015-05-03 13:20:59,248 INFO [main] h.v.j.v.e.Library [Library.java:36] Logging available books
-2015-05-03 13:20:59,255 DEBUG [main] h.v.j.v.e.Library [Library.java:40] is instance of saletrue
-2015-05-03 13:20:59,258 INFO [main] h.v.j.v.e.Library [Library.java:45] dostupno:
-Naslov: mko
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 2097.80HRK
-Jezik knjige: Njemacki
-Izdavač: qwe
-Država izdavača: qwer
-Dostupno za posudbu: Da
-2015-05-03 13:21:07,508 INFO [main] h.v.j.v.e.Book [Book.java:64] knjiga %s posudjena
-2015-05-03 13:21:49,715 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
-Naslov: mali
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 2097.80HRK
-Jezik knjige: Njemacki
-Izdavač: drakon
-Država izdavača: dra
-Dostupno za posudbu: Da
-2015-05-03 13:21:54,383 INFO [main] h.v.j.v.u.Operations [Operations.java:233] Najskuplja publikacija
-Naslov: mko
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 2097.80HRK
-Jezik knjige: Njemacki
-Izdavač: qwe
-Država izdavača: qwer
-Dostupno za posudbu: Ne
-2015-05-03 13:21:54,383 INFO [main] h.v.j.v.e.Library [Library.java:36] Logging available books
-2015-05-03 13:21:54,384 DEBUG [main] h.v.j.v.e.Library [Library.java:40] is instance of saletrue
-2015-05-03 13:21:54,384 DEBUG [main] h.v.j.v.e.Library [Library.java:40] is instance of saletrue
-2015-05-03 13:21:54,387 INFO [main] h.v.j.v.e.Library [Library.java:45] dostupno:
-Naslov: mali
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 2097.80HRK
-Jezik knjige: Njemacki
-Izdavač: drakon
-Država izdavača: dra
-Dostupno za posudbu: Da
-2015-05-03 14:37:11,581 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
-Naslov: mjeee
-Godina izdanja: 12345
-Broj stranica: 1234
+2015-05-15 01:25:11,500 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: Hrvatska
+Godina izdanja: 1938
+Broj stranica: 803
 Tip publikacije: Elektronicka
-Cijena: 123.40HRK
+Cijena: 70.86HRK
+Jezik knjige: Hrvatski
+Izdavač: Tiskara
+Država izdavača: Portugal
+Dostupno za posudbu: Da
+2015-05-15 01:25:11,500 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: Prozor u zidu
+Godina izdanja: 2014
+Broj stranica: 1003
+Tip publikacije: Papirnata
+Cijena: 1705.10HRK
 Jezik knjige: Francuski
-Izdavač: asdfg
-Država izdavača: asdfg
+Izdavač: Element
+Država izdavača: Njemacka
 Dostupno za posudbu: Da
-2015-05-03 14:37:38,781 INFO [main] h.v.j.v.u.Operations [Operations.java:233] Najskuplja publikacija
-Naslov: mjeee
-Godina izdanja: 12345
+2015-05-15 01:25:11,500 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:26] Read file operations
+2015-05-15 01:25:11,501 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:52] File read: 
+2015-05-15 01:25:11,501 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:52] File read: 
+2015-05-15 01:25:35,348 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:26] Read file operations
+2015-05-15 01:25:35,446 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: asdf
+Godina izdanja: 1234
 Broj stranica: 1234
+Tip publikacije: Papirnata
+Cijena: 2097.80HRK
+Jezik knjige: Engleski
+Izdavač: sadfa
+Država izdavača: safs
+Dostupno za posudbu: Da
+2015-05-15 01:25:35,447 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: Hrvatska
+Godina izdanja: 1938
+Broj stranica: 803
 Tip publikacije: Elektronicka
-Cijena: 123.40HRK
+Cijena: 70.86HRK
+Jezik knjige: Hrvatski
+Izdavač: Tiskara
+Država izdavača: Portugal
+Dostupno za posudbu: Da
+2015-05-15 01:25:35,447 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: Prozor u zidu
+Godina izdanja: 2014
+Broj stranica: 1003
+Tip publikacije: Papirnata
+Cijena: 1705.10HRK
 Jezik knjige: Francuski
-Izdavač: asdfg
-Država izdavača: asdfg
+Izdavač: Element
+Država izdavača: Njemacka
 Dostupno za posudbu: Da
-2015-05-03 14:37:38,782 INFO [main] h.v.j.v.e.Library [Library.java:36] Logging available books
-2015-05-03 14:37:38,790 DEBUG [main] h.v.j.v.e.Library [Library.java:40] is instance of saletrue
-2015-05-03 14:37:38,790 DEBUG [main] h.v.j.v.e.Library [Library.java:40] is instance of saletrue
-2015-05-03 14:44:14,961 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
-Naslov: mali
-Godina izdanja: 12344
-Broj stranica: 1234
-Tip publikacije: Elektronicka
-Cijena: 123.40HRK
-Jezik knjige: Njemacki
-Izdavač: ajde
-Država izdavača: adsf
-Dostupno za posudbu: Da
-2015-05-03 14:44:21,816 INFO [main] h.v.j.v.u.Operations [Operations.java:233] Najskuplja publikacija
-Naslov: ajde
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Elektronicka
-Cijena: 8958.12HRK
-Mjesec izdanja: 12
-2015-05-03 14:44:21,816 INFO [main] h.v.j.v.e.Library [Library.java:37] Logging available books
-2015-05-03 14:44:21,828 INFO [main] h.v.j.v.e.Library [Library.java:45] dostupno:
-Naslov: mali
-Godina izdanja: 12344
-Broj stranica: 1234
-Tip publikacije: Elektronicka
-Cijena: 123.40HRK
-Jezik knjige: Njemacki
-Izdavač: ajde
-Država izdavača: adsf
-Dostupno za posudbu: Da
-2015-05-03 14:46:19,239 INFO [main] h.v.j.v.e.Book [Book.java:64] knjiga %s posudjena
-2015-05-03 14:46:45,610 INFO [main] h.v.j.v.u.Operations [Operations.java:233] Najskuplja publikacija
-Naslov: ajde
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Elektronicka
-Cijena: 8958.12HRK
-Mjesec izdanja: 12
-2015-05-03 14:46:45,610 INFO [main] h.v.j.v.e.Library [Library.java:37] Logging available books
-2015-05-03 15:14:11,670 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
-Naslov: mali
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Elektronicka
-Cijena: 123.40HRK
-Jezik knjige: Engleski
-Izdavač: asdf
-Država izdavača: asdf
-Dostupno za posudbu: Da
-2015-05-03 15:14:17,869 INFO [main] h.v.j.v.u.Operations [Operations.java:226] Najskuplja publikacija
-Naslov: mali
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Elektronicka
-Cijena: 8958.12HRK
-Mjesec izdanja: 1
-2015-05-03 15:14:17,870 INFO [main] h.v.j.v.u.Operations [Operations.java:227] Najskuplja publikacije
-Optional[hr.vvg.java.vjezbe.entities.Book@1a52fbd]
-2015-05-05 00:14:33,233 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
-Naslov: werwer
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 2097.80HRK
-Jezik knjige: Njemacki
-Izdavač: qwert
-Država izdavača: asdf
-Dostupno za posudbu: Da
-2015-05-05 00:14:42,681 INFO [main] h.v.j.v.u.Operations [Operations.java:191] Najskuplja publikacija
-Naslov: werwer
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 2097.80HRK
-Jezik knjige: Njemacki
-Izdavač: qwert
-Država izdavača: asdf
-Dostupno za posudbu: Da
-2015-05-05 00:14:42,682 INFO [main] h.v.j.v.u.Operations [Operations.java:192] Najskuplja publikacije
-Optional[hr.vvg.java.vjezbe.entities.Book@1a52fbd]
-2015-05-05 00:15:47,535 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
-Naslov: werwer
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Elektronicka
-Cijena: 123.40HRK
-Jezik knjige: Engleski
-Izdavač: asdfg
-Država izdavača: asdfg
-Dostupno za posudbu: Da
-2015-05-05 00:15:53,732 INFO [main] h.v.j.v.u.Operations [Operations.java:191] Najskuplja publikacija
-Naslov: werwer
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 2097.80HRK
-Jezik knjige: Njemacki
-Izdavač: qwert
-Država izdavača: asdf
-Dostupno za posudbu: Da
-2015-05-05 00:15:53,732 INFO [main] h.v.j.v.u.Operations [Operations.java:192] Najskuplja publikacije
-Optional[hr.vvg.java.vjezbe.entities.Book@1ccaa]
-2015-05-05 00:16:30,983 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
-Naslov: asdf
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Elektronicka
-Cijena: 123.40HRK
-Jezik knjige: Njemacki
-Izdavač: asdf
-Država izdavača: asdf
-Dostupno za posudbu: Da
-2015-05-05 00:16:40,135 INFO [main] h.v.j.v.u.Operations [Operations.java:191] Najskuplja publikacija
-Naslov: werwer
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 2097.80HRK
-Jezik knjige: Njemacki
-Izdavač: qwert
-Država izdavača: asdf
-Dostupno za posudbu: Da
-2015-05-05 00:16:40,136 INFO [main] h.v.j.v.u.Operations [Operations.java:192] Najskuplja publikacije
-Optional[hr.vvg.java.vjezbe.entities.Book@1c7db30]
-2015-05-05 00:24:26,742 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+2015-05-15 01:25:35,447 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:26] Read file operations
+2015-05-15 01:25:35,448 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:52] # be obligated to leave
+2015-05-15 01:25:35,448 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:52] # an empty row at the EOF
+2015-05-15 01:25:47,407 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:26] Read file operations
+2015-05-15 01:25:47,513 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
 Naslov: asdf
 Godina izdanja: 1234
 Broj stranica: 1234
 Tip publikacije: Papirnata
 Cijena: 2097.80HRK
 Jezik knjige: Engleski
-Izdavač: asdf
-Država izdavača: asdf
+Izdavač: sadfa
+Država izdavača: safs
 Dostupno za posudbu: Da
-2015-05-05 00:24:34,757 INFO [main] h.v.j.v.u.Operations [Operations.java:199] Najskuplja publikacija
+2015-05-15 01:25:47,513 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: Hrvatska
+Godina izdanja: 1938
+Broj stranica: 803
+Tip publikacije: Elektronicka
+Cijena: 70.86HRK
+Jezik knjige: Hrvatski
+Izdavač: Tiskara
+Država izdavača: Portugal
+Dostupno za posudbu: Da
+2015-05-15 01:25:47,514 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: Prozor u zidu
+Godina izdanja: 2014
+Broj stranica: 1003
+Tip publikacije: Papirnata
+Cijena: 1705.10HRK
+Jezik knjige: Francuski
+Izdavač: Element
+Država izdavača: Njemacka
+Dostupno za posudbu: Da
+2015-05-15 01:25:47,514 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:26] Read file operations
+2015-05-15 01:25:47,514 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:52] # be obligated to leave
+2015-05-15 01:25:47,514 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:52] # an empty row at the EOF
+2015-05-15 01:38:07,866 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:26] Read file operations on data/member.txt
+2015-05-15 01:38:07,879 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:53] data/member.txt: # member file
+2015-05-15 01:38:07,880 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:53] data/member.txt: # member name, surname and oib number
+2015-05-15 01:38:38,445 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:26] Read file operations on data/member.txt
+2015-05-15 01:38:38,459 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:53] data/member.txt: # member file
+2015-05-15 01:38:38,459 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:53] data/member.txt: # member name, surname and oib number
+2015-05-15 01:38:38,541 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:26] Read file operations on data/books.txt
+2015-05-15 01:38:38,570 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
 Naslov: asdf
 Godina izdanja: 1234
 Broj stranica: 1234
 Tip publikacije: Papirnata
 Cijena: 2097.80HRK
 Jezik knjige: Engleski
-Izdavač: asdf
-Država izdavača: asdf
+Izdavač: sadfa
+Država izdavača: safs
 Dostupno za posudbu: Da
-2015-05-05 00:24:34,757 INFO [main] h.v.j.v.u.Operations [Operations.java:200] Najskuplja publikacije
-Optional[hr.vvg.java.vjezbe.entities.Book@1a52fbd]
-2015-05-05 00:24:51,743 INFO [main] h.v.j.v.e.Book [Book.java:64] knjiga %s posudjena
-2015-05-05 00:25:14,280 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
-Naslov: asdff
-Godina izdanja: 1234
-Broj stranica: 1234
+2015-05-15 01:38:38,570 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: Hrvatska
+Godina izdanja: 1938
+Broj stranica: 803
 Tip publikacije: Elektronicka
-Cijena: 123.40HRK
-Jezik knjige: Njemacki
-Izdavač: asdf
-Država izdavača: asdf
+Cijena: 70.86HRK
+Jezik knjige: Hrvatski
+Izdavač: Tiskara
+Država izdavača: Portugal
 Dostupno za posudbu: Da
-2015-05-05 00:25:19,708 INFO [main] h.v.j.v.u.Operations [Operations.java:199] Najskuplja publikacija
+2015-05-15 01:38:38,571 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: Prozor u zidu
+Godina izdanja: 2014
+Broj stranica: 1003
+Tip publikacije: Papirnata
+Cijena: 1705.10HRK
+Jezik knjige: Francuski
+Izdavač: Element
+Država izdavača: Njemacka
+Dostupno za posudbu: Da
+2015-05-15 01:38:38,571 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:26] Read file operations on data/magazines.txt
+2015-05-15 01:38:38,571 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:53] data/magazines.txt: # be obligated to leave
+2015-05-15 01:38:38,572 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:53] data/magazines.txt: # an empty row at the EOF
+2015-05-15 02:12:16,915 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:28] Read file operations on data/books.txt
+2015-05-15 02:12:17,003 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
 Naslov: asdf
 Godina izdanja: 1234
 Broj stranica: 1234
 Tip publikacije: Papirnata
 Cijena: 2097.80HRK
 Jezik knjige: Engleski
-Izdavač: asdf
-Država izdavača: asdf
-Dostupno za posudbu: Ne
-2015-05-05 00:25:19,711 INFO [main] h.v.j.v.u.Operations [Operations.java:200] Najskuplja publikacije
-Optional[hr.vvg.java.vjezbe.entities.Book@1531931]
-2015-05-14 13:48:39,234 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
-Naslov: mali
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 2097.80HRK
-Jezik knjige: Njemacki
-Izdavač: princ
-Država izdavača: asdfg
+Izdavač: sadfa
+Država izdavača: safs
 Dostupno za posudbu: Da
-2015-05-14 13:48:56,443 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
-Naslov: asdf
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 2097.80HRK
-Jezik knjige: Njemacki
-Izdavač: asdfg
-Država izdavača: 12fff
-Dostupno za posudbu: Da
-2015-05-14 13:49:03,450 INFO [main] h.v.j.v.u.Operations [Operations.java:199] Najskuplja publikacija
-Naslov: asdf
-Godina izdanja: 2334
-Broj stranica: 2344
-Tip publikacije: Papirnata
-Cijena: 549433.60HRK
-Mjesec izdanja: 23
-2015-05-14 13:49:03,451 INFO [main] h.v.j.v.u.Operations [Operations.java:200] Najskuplja publikacije
-Optional[hr.vvg.java.vjezbe.entities.Book@1a52fbd]
-2015-05-14 14:25:58,953 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
-Naslov: aasdf
-Godina izdanja: 1234
-Broj stranica: 12345
+2015-05-15 02:12:17,004 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: Hrvatska
+Godina izdanja: 1938
+Broj stranica: 803
 Tip publikacije: Elektronicka
-Cijena: 1234.50HRK
-Jezik knjige: Njemacki
-Izdavač: asdf
-Država izdavača: asdfg
+Cijena: 70.86HRK
+Jezik knjige: Hrvatski
+Izdavač: Tiskara
+Država izdavača: Portugal
 Dostupno za posudbu: Da
-2015-05-14 14:26:05,247 INFO [main] h.v.j.v.u.Operations [Operations.java:199] Najskuplja publikacija
-Naslov: asdf
-Godina izdanja: 1234
-Broj stranica: 1234
+2015-05-15 02:12:17,004 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
+Naslov: Prozor u zidu
+Godina izdanja: 2014
+Broj stranica: 1003
 Tip publikacije: Papirnata
-Cijena: 152287.94HRK
-Mjesec izdanja: 12
-2015-05-14 14:26:05,247 INFO [main] h.v.j.v.u.Operations [Operations.java:200] Najskuplja publikacije
-Optional[hr.vvg.java.vjezbe.entities.Book@1a52fbd]
-2015-05-14 14:26:23,417 INFO [main] h.v.j.v.e.Book [Book.java:64] knjiga %s posudjena
-2015-05-14 14:26:45,110 INFO [main] h.v.j.v.e.Book [Book.java:36] Book created
-Naslov: asdfee
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 2097.80HRK
-Jezik knjige: Njemacki
-Izdavač: asdfa
-Država izdavača: safasdf
+Cijena: 1705.10HRK
+Jezik knjige: Francuski
+Izdavač: Element
+Država izdavača: Njemacka
 Dostupno za posudbu: Da
-2015-05-14 14:26:51,345 INFO [main] h.v.j.v.u.Operations [Operations.java:199] Najskuplja publikacija
-Naslov: asdf
-Godina izdanja: 1234
-Broj stranica: 1234
-Tip publikacije: Papirnata
-Cijena: 152287.94HRK
-Mjesec izdanja: 12
-2015-05-14 14:26:51,346 INFO [main] h.v.j.v.u.Operations [Operations.java:200] Najskuplja publikacije
-Optional[hr.vvg.java.vjezbe.entities.Book@1bc7afb]
-2015-05-14 14:28:08,681 INFO [main] h.v.j.v.e.Book [Book.java:64] knjiga %s posudjena
+2015-05-15 02:12:17,004 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:28] Read file operations on data/magazines.txt
+2015-05-15 02:12:17,005 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:56] data/magazines.txt: # be obligated to leave
+2015-05-15 02:12:17,005 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:56] data/magazines.txt: # an empty row at the EOF
+2015-05-15 02:12:17,106 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:28] Read file operations on data/member.txt
+2015-05-15 02:12:17,107 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:56] data/member.txt: # member file
+2015-05-15 02:12:17,107 INFO [main] h.v.j.v.u.FileOperator [FileOperator.java:56] data/member.txt: # member name, surname and oib number

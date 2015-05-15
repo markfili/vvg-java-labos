@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
  */
 public class Operations {
 
-    private static Logger logger = LoggerFactory.getLogger(Operations.class);
+    private static final Logger logger = LoggerFactory.getLogger(Operations.class);
 
     /**
      * prints a form for new Magazine entry
@@ -153,8 +153,13 @@ public class Operations {
      *
      * @param libraryList List to iterate through and print data
      */
-    private static <T extends Publication> void printPublicationList(List<T> libraryList) {
-        libraryList.stream().forEach(Publication::printData);
+    public static <T extends Publication> void printPublicationList(List<T> libraryList) {
+
+        libraryList.stream().forEach(p -> {
+            // kako ubaciti ordered list numbering?
+            p.printData();
+            System.out.println();
+        });
     }
 
 
@@ -195,7 +200,7 @@ public class Operations {
         Function<Publication, BigDecimal> byPrice = Publication::getPriceOfPublication;
         publicationList.stream().sorted(Comparator.comparing(byPrice));
         logger.info("Najskuplja publikacija\n" + publicationList.stream().findFirst().get().getData());
-        logger.info("Najskuplja publikacije\n" + Optional.of(publicationList.get(publicationList.size() - 1)));
+        logger.info("Najjeftinija publikacije\n" + Optional.of(publicationList.get(publicationList.size() - 1)));
     }
 
 
@@ -225,7 +230,7 @@ public class Operations {
      * @param pubToLoan publication being loaned
      */
     public static <T extends Publication> void executeLoan(Member member, T pubToLoan) {
-        Loan<T> loan = new Loan<T>(member, pubToLoan, LocalDateTime.now());
+        Loan<T> loan = new Loan<>(member, pubToLoan, LocalDateTime.now());
         loan.printData();
     }
 
@@ -240,6 +245,13 @@ public class Operations {
     public static <T extends Publication> boolean addPublication(T pub, Library<T> library) {
         try {
             checkForDuplicate(pub, library.getLibraryList());
+            String fileURL;
+            if (pub instanceof Magazine) {
+                fileURL = Literals.MAGAZINE_FILE;
+            } else {
+                fileURL = Literals.BOOK_FILE;
+            }
+            FileOperator.writeFile(pub, fileURL);
             library.acquire(pub);
             return true;
         } catch (DuplicatePublicationException ex) {
@@ -257,7 +269,7 @@ public class Operations {
      * @param publicationList
      * @throws DuplicatePublicationException if duplicate publication found
      */
-    public static <T extends Publication> void checkForDuplicate(T obj, List<T> publicationList) throws DuplicatePublicationException {
+    private static <T extends Publication> void checkForDuplicate(T obj, List<T> publicationList) throws DuplicatePublicationException {
         for (T pub : publicationList) {
             if (pub.equals(obj)) {
                 logger.warn("Pronadjen duplikat!" + obj.getPublicationTitle());
@@ -273,6 +285,7 @@ public class Operations {
      * @return returns the chosen Language
      */
     public static Language chooseLanguage(Scanner scanner) {
+
         System.out.println(Literals.LANGUAGE);
 
         // TODO Iterator preskace neparni ordinal
@@ -283,5 +296,31 @@ public class Operations {
         }
         int selection = HelpingHand.checkIntInRange(scanner, 1, Language.values().length) - 1;
         return Language.values()[selection];
+    }
+
+    public static void getBooks(Library<Publication> libraryList) {
+
+        List<String> fileData = FileOperator.readFile(Literals.BOOK_FILE).get().stream().collect(Collectors.toList());
+        for (int i = 0; i < fileData.size(); ) {
+            Book book = new Book(fileData.get(i), Language.languages().get(Integer.valueOf(fileData.get(i + 1)) - 1), new Publisher(fileData.get(i + 2), fileData.get(i + 3)), Integer.valueOf(fileData.get(i + 4)), Integer.valueOf(fileData.get(i + 5)), PublicationType.values()[Integer.valueOf(fileData.get(i + 6)) - 1]);
+            libraryList.acquire(book);
+            i += 7;
+        }
+    }
+
+    public static void getMagazines(Library<Publication> library) {
+
+        List<String> fileData = FileOperator.readFile(Literals.MAGAZINE_FILE).get().stream().collect(Collectors.toList());
+        for (int i = 0; i < fileData.size(); ) {
+            Magazine magazine = new Magazine(fileData.get(i), Integer.valueOf(fileData.get(i + 1)), Integer.valueOf(fileData.get(i + 2)), Integer.valueOf(fileData.get(i + 3)), PublicationType.values()[Integer.valueOf(fileData.get(i + 4)) - 1]);
+            library.acquire(magazine);
+            i += 5;
+        }
+    }
+
+    public static Member getMember() {
+
+        List<String> fileData = FileOperator.readFile(Literals.MEMBER_FILE).get().stream().collect(Collectors.toList());
+        return new Member(fileData.get(0), fileData.get(1), fileData.get(2));
     }
 }

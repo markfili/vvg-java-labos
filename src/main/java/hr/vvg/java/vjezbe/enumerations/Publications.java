@@ -1,6 +1,7 @@
 package hr.vvg.java.vjezbe.enumerations;
 
 /**
+ * Enumerations with types of publication
  * Created by marko on 5/3/15.
  */
 public enum Publications {

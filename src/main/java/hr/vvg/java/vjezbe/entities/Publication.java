@@ -6,6 +6,7 @@ import hr.vvg.java.vjezbe.interfaces.ForSale;
 import java.math.BigDecimal;
 
 /**
+ * Publication super entity.
  * Created by marko on 3/18/15.
  */
 public abstract class Publication implements ForSale {
@@ -45,6 +46,8 @@ public abstract class Publication implements ForSale {
     public abstract void printData();
 
     public abstract String getData();
+
+    public abstract String fileData();
 
     public abstract void checkAffordability(BigDecimal price);
 

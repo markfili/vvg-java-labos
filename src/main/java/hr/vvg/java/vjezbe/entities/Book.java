@@ -20,7 +20,7 @@ public class Book extends Publication implements ForLoan {
 
     private static final double PRICE_PER_PAGE_CROATIAN = 1.5;
     private static final double PRICE_PER_PAGE_FOREIGN = 1.7;
-    private static final int BOTTOM_PRICE = 100;
+    private static final int BOTTOM_PRICE = 70;
     private Logger logger = LoggerFactory.getLogger(Book.class);
     private Language language;
     private boolean available;
@@ -56,6 +56,11 @@ public class Book extends Publication implements ForLoan {
     @Override
     public String getData() {
         return String.format("Naslov: %s\nGodina izdanja: %d\nBroj stranica: %d\nTip publikacije: %s\nCijena: %sHRK\nJezik knjige: %s\nIzdavač: %s\nDržava izdavača: %s\nDostupno za posudbu: %s", getPublicationTitle(), getYearPublished(), getNumberOfPages(), getTypeOfPublication().getFriendlyName(), getPriceOfPublication().toPlainString(), getLanguage().getFriendlyName(), getPublisher().getName(), getPublisher().getCountry(), isAvailable() ? "Da" : "Ne");
+    }
+
+    @Override
+    public String fileData() {
+        return String.format("%s\n%s\n%s\n%s\n%s\n%s\n%s\n", getPublicationTitle(), getLanguage().getId(), getPublisher().getName(), getPublisher().getCountry(), getYearPublished(), getNumberOfPages(), getTypeOfPublication().getId());
     }
 
     @Override

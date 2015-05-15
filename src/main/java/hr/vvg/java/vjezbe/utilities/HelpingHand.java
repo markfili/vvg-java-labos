@@ -35,7 +35,7 @@ public class HelpingHand {
                     checkIfInRange(result, minValue, maxValue);
                     notOk = false;
                 }
-            } catch (NumberFormatException|ResultOutOfRange ex) {
+            } catch (NumberFormatException | ResultOutOfRange ex) {
                 System.out.println(ex.getLocalizedMessage() + "Pokusajte ponovno.");
                 notOk = true;
             }

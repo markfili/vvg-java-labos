@@ -1,0 +1,5 @@
+# member file
+# member name, surname and oib number
+Ivo
+Ivić
+30129452345
