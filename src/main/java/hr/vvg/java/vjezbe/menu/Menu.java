@@ -60,13 +60,13 @@ public class Menu {
             if (Literals.CANCEL.equals(decision)) {
                 Menu.loaning(scanner, library);
                 System.out.printf("Zelite li unijeti nove publikacije i posuditi nesto drugo?");
-                System.out.println("Da za ponavljanje, bilosto za kraj");
+                System.out.println("(Da za ponavljanje, bilosto za kraj)");
                 decision = scanner.nextLine().toLowerCase();
             }
             // quit if "no" selected
         } while (Literals.CONFIRM.equals(decision));
 
-        System.out.println("Hvala sto ste koristili eKnjiznicu.");
+        System.out.println("Hvala sto ste koristili eKnjiznicu. Pozdrav");
     }
 
     /**

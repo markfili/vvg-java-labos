@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cee57479-af13-46b1-910d-d2a02cd1a31d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/menu/Menu.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Filipovic-3.eml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Filipovic-3.userlibraries" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/base/Main$1.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/base/Main.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/base/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/utilities/Operations.class" afterPath="$PROJECT_DIR$/target/classes/hr/vvg/java/vjezbe/utilities/Operations.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/base/Main.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/base/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/Operations.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/utilities/Operations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/books.txt" afterPath="$PROJECT_DIR$/data/books.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/pogreske.log" afterPath="$PROJECT_DIR$/logs/pogreske.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/menu/Menu.java" afterPath="$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/menu/Menu.java" />
     </list>
     <ignored path="Filipovic-1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,8 +70,8 @@
       <file leaf-file-name="Menu.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/menu/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6300578" vertical-offset="0" max-vertical-offset="2232">
-              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+            <state vertical-scroll-proportion="2.3583815" vertical-offset="0" max-vertical-offset="2232">
+              <caret line="68" column="71" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1078,8 +1071,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/vvg/java/vjezbe/menu/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6300578" vertical-offset="0" max-vertical-offset="2232">
-          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+        <state vertical-scroll-proportion="2.3583815" vertical-offset="0" max-vertical-offset="2232">
+          <caret line="68" column="71" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
