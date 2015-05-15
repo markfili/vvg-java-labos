@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Maven: ch.qos.logback:logback-classic:1.1.1">
+    <archive path="/home/marko/.m2/repository/ch/qos/logback/logback-classic/1.1.1/logback-classic-1.1.1.jar" />
+  </library>
+  <library name="Maven: ch.qos.logback:logback-core:1.1.1">
+    <archive path="/home/marko/.m2/repository/ch/qos/logback/logback-core/1.1.1/logback-core-1.1.1.jar" />
+  </library>
+  <library name="Maven: org.slf4j:slf4j-api:1.7.6">
+    <archive path="/home/marko/.m2/repository/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar" />
+  </library>
+  <library name="scala-sdk-2.11.4">
+    <archive path="/home/marko/Development/scala-2.11.4/lib/scala-reflect.jar" />
+    <archive path="/home/marko/Development/scala-2.11.4/lib/scala-parser-combinators_2.11-1.0.2.jar" />
+    <archive path="/home/marko/Development/scala-2.11.4/lib/scala-swing_2.11-1.0.1.jar" />
+    <archive path="/home/marko/Development/scala-2.11.4/lib/scala-xml_2.11-1.0.2.jar" />
+    <archive path="/home/marko/Development/scala-2.11.4/lib/scala-actors-migration_2.11-1.1.0.jar" />
+    <archive path="/home/marko/Development/scala-2.11.4/lib/scala-actors-2.11.0.jar" />
+    <archive path="/home/marko/Development/scala-2.11.4/lib/scala-library.jar" />
+  </library>
+</eclipse-userlibraries>
+

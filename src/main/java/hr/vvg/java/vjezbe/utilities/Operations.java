@@ -115,7 +115,8 @@ public class Operations {
             // string
             String selection = scanner.nextLine();
             // filtered = filterPublications(libraryList, pub -> pub.getPublicationTitle().contains(selection));
-            filtered = libraryList.stream().filter(pub -> pub.getPublicationTitle().contains(selection)).collect(Collectors.toList());
+            // TODO org.apache.commons.lang3.StringUtils.containsIgnoreCase
+            filtered = libraryList.stream().filter(pub -> pub.getPublicationTitle().toLowerCase().contains(selection.toLowerCase())).collect(Collectors.toList());
             if (filtered.isEmpty()) {
                 System.out.println("Nije pronadjena nijedna publikacija, pokusajte ponovno.");
             } else {
